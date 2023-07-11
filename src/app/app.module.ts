@@ -8,12 +8,24 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductsComponent } from './products/products.component';
+import { ComissionsComponent } from './comissions/comissions.component';
+import { SalesReportComponent } from './sales-report/sales-report.component';
+import { SupportComponent } from './support/support.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent,
+    ProductsComponent,
+    ComissionsComponent,
+    SalesReportComponent,
+    SupportComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
