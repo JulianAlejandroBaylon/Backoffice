@@ -63,7 +63,22 @@
   );
   color: white;
 }
-
+.squares {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.square {
+  border-radius: 15px;
+  background-color: rgba(21, 15, 66, 1);
+  width: 15%;
+  justify-content: center;
+  margin: 2% 5% 2% 5%;
+  text-align: center;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+}
 .balance {
 }
 
