@@ -1,15 +1,37 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer mode="side" opened>Sidenav content</mat-drawer>
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
-   <mat-icon>menu</mat-icon>
- </button>
- <span>My App</span>
- <span class="example-spacer"></span>
- <mat-icon fontIcon="check_circle"></mat-icon>
- <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-  <mat-icon>share</mat-icon>
-</button>
-</mat-toolbar>
-<app-dashboard style="padding: 0;"></app-dashboard>
+  <mat-drawer #drawer mode="side" opened style="background-color: #150f42"
+    >Sidenav content</mat-drawer
+  >
+  <mat-drawer-content>
+    <mat-toolbar style="background-color: #150f42">
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with menu icon"
+        (click)="drawer.toggle()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <mat-icon fontIcon="check_circle"></mat-icon>
+      <button
+        mat-icon-button
+        class="example-icon"
+        aria-label="Example icon-button with share icon"
+      >
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </mat-drawer-content>
+  <mat-drawer-content
+    style="
+      background: var(
+        --web-gradient,
+        linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
+      );
+    "
+  >
+    <app-dashboard style="padding: 0"></app-dashboard>
+  </mat-drawer-content>
 </mat-drawer-container>

@@ -21,7 +21,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
   declarations: [
     AppComponent,
     NavbarComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
