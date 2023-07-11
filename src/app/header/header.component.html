@@ -1,4 +1,15 @@
-<div class="header">
-  <div class="sidenav"></div>
-  <div class="navbar"></div>
-</div>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer mode="side" opened>Sidenav content</mat-drawer>
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+   <mat-icon>menu</mat-icon>
+ </button>
+ <span>My App</span>
+ <span class="example-spacer"></span>
+ <mat-icon fontIcon="check_circle"></mat-icon>
+ <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <mat-icon>share</mat-icon>
+</button>
+</mat-toolbar>
+<app-dashboard style="padding: 0;"></app-dashboard>
+</mat-drawer-container>
