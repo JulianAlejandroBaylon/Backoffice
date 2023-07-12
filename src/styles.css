@@ -30,3 +30,8 @@ body {
 .thin {
   font-family: "Poppins-Thin";
 }
+.title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
