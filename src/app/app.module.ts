@@ -15,6 +15,12 @@ import { SupportComponent } from './support/support.component';
 import { SettingsComponent } from './settings/settings.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSelectModule} from '@angular/material/select';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
+
+
 
 @NgModule({
   declarations: [
@@ -29,7 +35,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     BrowserAnimationsModule,
     MatIconModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
