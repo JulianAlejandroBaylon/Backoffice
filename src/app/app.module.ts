@@ -13,13 +13,15 @@ import { ComissionsComponent } from './comissions/comissions.component';
 import { SalesReportComponent } from './sales-report/sales-report.component';
 import { SupportComponent } from './support/support.component';
 import { SettingsComponent } from './settings/settings.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatMenuModule } from '@angular/material/menu';
-import {MatSelectModule} from '@angular/material/select';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, DashboardComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    DashboardComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,9 +29,7 @@ import {MatSelectModule} from '@angular/material/select';
     BrowserAnimationsModule,
     MatIconModule,
     MatSidenavModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatSelectModule
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

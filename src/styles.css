@@ -1,6 +1,39 @@
-body{
+body {
   margin: 0;
   padding: 0;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(/assets/fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(/assets/fonts/poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(/assets/fonts/poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url(/assets/fonts/poppins/Poppins-Thin.ttf);
+}
+.regular {
+  font-family: "Poppins-Regular";
+}
+.bold {
+  font-family: "Poppins-Bold";
+}
+.medium {
+  font-family: "Poppins-Medium";
+}
+.thin {
+  font-family: "Poppins-Thin";
+}
+.title {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .mdc-text-field--filled:not(.mdc-text-field--disabled){background-color:transparent;}
 .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {

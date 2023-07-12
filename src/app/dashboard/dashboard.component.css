@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   width: 85%;
   margin: auto;
+  justify-content: space-between;
 }
 .conts {
   border-radius: 15px;
@@ -10,7 +11,7 @@
   min-height: auto;
   background-color: rgba(63, 38, 127, 1);
   border: solid 1px rgba(255, 255, 255, 0.793);
-  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.414);
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.304);
   margin: 3% 0% 0% 0%;
 }
 .column {
@@ -32,6 +33,8 @@
 .welcome-left {
   margin-left: 2%;
   width: 58%;
+  justify-content: center;
+  margin: 1.5%;
 }
 .welcome-left h2 {
   margin: 0;
@@ -42,6 +45,7 @@
   flex-wrap: wrap;
   font-size: 1.7rem;
   align-items: center;
+  margin: 0;
 }
 .welcome-left img {
   width: 15%;
@@ -51,50 +55,126 @@
   align-items: center;
   width: 40%;
 }
-.welcome button {
-  width: 50%;
-  min-height: 30px;
-  border-radius: 50px;
-  border: none;
+.btns{
+    width: 50%;
+    min-height: 40px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+}
+.welcome button {  
   background: linear-gradient(
     to left,
     rgba(197, 139, 242, 1),
     rgba(146, 163, 253, 1)
-  );
+  ); 
+}
+.balance {
   color: white;
 }
 .squares {
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 2%;
 }
 .square {
   border-radius: 15px;
   background-color: rgba(21, 15, 66, 1);
-  width: 15%;
+  width: 22%;
   justify-content: center;
-  margin: 2% 5% 2% 5%;
   text-align: center;
 }
-.title{
-    justify-content: center;
-    align-items: center;
+.h3sq {
+  margin: auto;
+  width: 60%;
+  align-items: center;
+  font-size: 1vw;
+  padding-top: 5%;
 }
-.balance {
+.h3sq span {
+  margin-right: 5%;
 }
-
+.mg-5 {
+  margin: 5% 0% 0% 0%;
+}
+.colorstext {
+  background: linear-gradient(
+    to right,
+    rgba(192, 0, 220, 1) 50%,
+    rgba(137, 73, 255, 1),
+    rgba(0, 240, 255, 1) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.circle {
+  border-radius: 50%;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35px;
+}
+.progress-wrapper {
+  position: relative;
+  height: 20px;
+}
+.progress-end-dot {
+  position: absolute;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1;
+}
+.progress-label {
+  position: relative;
+}
+mat-progress-bar {
+  background-color: white;
+  border-radius: 25px;
+  min-height: 10px;
+}
 .goals {
 }
 
 .offer {
+    color: white;
+    justify-content: center;
 }
-
+.oftext{
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2.4%;
+}
+.offer button{
+    background: linear-gradient(
+    to right,
+    rgba(18, 128, 190, 1),
+    rgba(99, 25, 169, 1)
+  ); 
+}
+.offer img{
+    margin: auto;
+    width: 75%;
+}
 .promos {
+    color: white;
 }
-
+.promimg{
+    justify-content: space-between;
+    margin: 3%;
+}
+.promimg img{
+    width: 30%;
+}
 .mapping {
-  width: 50%;
+  width: 45%;
 }
-
 .sub {
-  width: 50%;
+  width: 45%;
 }

@@ -1,45 +1,103 @@
 <div class="container">
-  <div class="welcome row conts">
+  <div class="welcome row conts medium">
     <div class="welcome-left column">
-        <h2>Hi VARIABLE.</h2>
-        <p>Earn Over 10% with...<img src="/assets/images/logotext.png" alt="" /></p>
+      <h2>Hi VARIABLE.</h2>
+      <p>
+        Earn Over 10% with...<img src="/assets/images/logotext.png" alt="" />
+      </p>
     </div>
     <div class="welcome-right column">
       <p>Referal Link: Vrakka.com/VARIABLE</p>
-      <button>Copy Link</button>
+      <button class="btns medium">Copy Link</button>
     </div>
   </div>
   <div class="balance conts">
     <div class="title row">
-        <h2>Weekly balance - </h2>
-        <h3> Sales Summery</h3>
+      <h2 class="regular">Weekly balance -</h2>
+      <h3 class="thin">Sales Summery</h3>
     </div>
     <div class="squares row">
-        <div class="square column">
-            <h3><span></span>Total Sales</h3>
-            <h2>$ VALOR USD</h2>
-            <p>+ N% from last week</p>
-        </div>
-        <div class="square column">
-            <h3><span></span>Comissions</h3>
-            <h2>$ VALOR USD</h2>
-            <p>+ N% from last week</p>
-        </div>
-        <div class="square column">
-            <h3><span></span>NFTs sold</h3>
-            <h2>$ VALOR USD</h2>
-            <p>+ N% from last week</p>
-        </div>
-        <div class="square column">
-            <h3><span></span>New customers</h3>
-            <h2>$ VALOR USD</h2>
-            <p>+ N% from last week</p>
-        </div>
+      <div class="square column">
+        <h3 class="row thin h3sq">
+          <span class="circle" style="background-color: rgba(248, 6, 255, 1)"
+            ><mat-icon style="color: white">assessment</mat-icon></span
+          >Total Sales
+        </h3>
+        <h2 class="regular mg-5">$ VALOR USD</h2>
+        <p class="colorstext regular">+ N% from last week</p>
+      </div>
+      <div class="square column">
+        <h3 class="row thin h3sq">
+          <span class="circle" style="background-color: rgba(252, 172, 80, 1)"
+            ><mat-icon style="color: white">description</mat-icon></span
+          >Comissions
+        </h3>
+        <h2 class="regular mg-5">$ VALOR USD</h2>
+        <p class="colorstext regular">+ N% from last week</p>
+      </div>
+      <div class="square column">
+        <h3 class="row thin h3sq">
+          <span class="circle" style="background-color: rgba(19, 207, 221, 1)"
+            ><mat-icon style="color: white">description</mat-icon></span
+          >NFTs sold
+        </h3>
+        <h2 class="regular mg-5">$ VALOR USD</h2>
+        <p class="colorstext regular">+ N% from last week</p>
+      </div>
+      <div class="square column">
+        <h3 class="row thin h3sq">
+          <span class="circle" style="background-color: rgba(140, 48, 245, 1)"
+            ><mat-icon style="color: white">person_add_alt_1</mat-icon></span
+          >New customers
+        </h3>
+        <h2 class="regular mg-5">$ VALOR USD</h2>
+        <p class="colorstext regular">+ N% from last week</p>
+      </div>
     </div>
   </div>
-  <div class="goals conts" style="background-color: blue">x</div>
-  <div class="offer conts" style="background-color: purple">x</div>
-  <div class="promos conts" style="background-color: blueviolet">x</div>
+  <div class="goals conts">
+    <div>
+      <h2 class="title regular">Goals & Rewards</h2>
+    </div>
+    <div>
+      <p>Complete the NFTs Sales Goal to earn the Reward</p>
+      <div class="progress-wrapper">
+        <div
+          class="progress-end-dot"
+          [style.left.%]="progressValueIphone"
+        ></div>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="progressValueIphone"
+        ></mat-progress-bar>
+      </div>
+      <div class="progress-wrapper">
+        <div class="progress-end-dot" [style.left.%]="progressValueTrip"></div>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="progressValueTrip"
+        ></mat-progress-bar>
+      </div>
+    </div>
+  </div>
+  <div class="offer conts row">
+    <div class="oftext column">
+        <h2 class="title regular">Exclusive packages with limited prices</h2>
+        <p class="regular">Don't miss out on this limited-time opportunity! By purchasing more packages of our exceptional products, you gain access to exclusive private rounds with amazing benefits. Act now and secure your spot before the closure date.</p>
+        <button class="btns medium">Acquire Packages</button>
+    </div>
+    <div class="row">
+        <img src="/assets/images/academy-large.png" alt="">
+    </div>
+  </div>
+  <div class="promos conts">
+    <div><h2 class="title regular">Active promos</h2></div>
+    <div class="promimg row">
+        <img src="/assets/images/promo.png" alt="">
+        <img src="/assets/images/promo.png" alt="">
+        <img src="/assets/images/promo.png" alt="">
+    </div>
+  </div>
   <div class="mapping conts" style="background-color: aqua">x</div>
   <div class="sub conts" style="background-color: greenyellow">x</div>
 </div>
