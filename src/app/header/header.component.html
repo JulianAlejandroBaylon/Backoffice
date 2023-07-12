@@ -1,37 +1,40 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer mode="side" opened style="background-color: #150f42"
-    >Sidenav content</mat-drawer
-  >
+  <mat-drawer class="sidenav" #drawer mode="side">
+    <img src="assets/icons/Chartcircle.svg" alt=""> </mat-drawer>
   <mat-drawer-content>
-    <mat-toolbar style="background-color: #150f42">
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with menu icon"
-        (click)="drawer.toggle()"
-      >
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>My App</span>
-      <span class="example-spacer"></span>
-      <mat-icon fontIcon="check_circle"></mat-icon>
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with share icon"
-      >
-        <mat-icon>share</mat-icon>
-      </button>
+    <mat-toolbar class="navbar">
+      <div class="title">
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+          (click)="drawer.toggle()"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dashboard</span>
+      </div>
+      <div class="options">
+        <img *ngIf="selected=='USA'" src="assets/icons/USA.svg" alt="">
+        <img *ngIf="selected=='MX'" src="assets/icons/MX.svg" alt="">
+        <div class="idioma">
+          <mat-form-field>
+            <mat-select [(value)]="selected">
+              <mat-option value="USA">Eng (US)</mat-option>
+              <mat-option value="MX">Esp (MX)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <button class="notify">
+         <img src="assets/icons/Bell.svg" alt="">
+        </button>
+        <button class="btnUser">
+          <div class="user">User</div>
+        </button>
+      </div>
     </mat-toolbar>
   </mat-drawer-content>
-  <mat-drawer-content
-    style="
-      background: var(
-        --web-gradient,
-        linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
-      );
-    "
-  >
-    <app-dashboard style="padding: 0"></app-dashboard>
+  <mat-drawer-content class="body">
+    <app-dashboard></app-dashboard>
   </mat-drawer-content>
 </mat-drawer-container>

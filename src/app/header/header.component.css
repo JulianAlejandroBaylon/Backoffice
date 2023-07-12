@@ -1,0 +1,61 @@
+span{
+  margin: auto;
+  color: white;
+}
+
+mat-icon{
+  color: white;
+    width: auto;
+    height: auto;
+}
+
+.example-icon{
+  background-color: transparent;
+    border: white;
+    width: auto;
+}
+
+.sidenav, .navbar{
+  background-color: #150f42;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body{
+  background: var(
+        --web-gradient,
+        linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
+      );
+}
+
+.title{
+  display: flex;
+  width: 15%;
+}
+
+
+.options{
+  display: flex;
+  align-items: center;
+}
+
+.mat-drawer-content {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: auto;
+  overflow: unset;
+}
+
+mat-select{
+  color: white;
+}
+
+.notify{
+  border-radius: 0.44819rem;
+background: var(--vrakka-habits-progress-bar-linear, linear-gradient(270deg, #C58BF2 1.94%, #92A3FD 100%));
+}
