@@ -28,7 +28,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
