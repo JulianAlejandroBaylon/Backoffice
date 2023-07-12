@@ -1,0 +1,51 @@
+.welcome {
+  border-radius: 15px;
+  width: 100%;
+  min-height: auto;
+  border: solid 1px rgba(255, 255, 255, 0.793);
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.304);
+  margin: 3% 0% 0% 0%;
+  background: linear-gradient(
+    to right,
+    rgba(113, 102, 210, 1),
+    rgba(83, 74, 186, 1)
+  );
+  color: white;
+}
+.welcome-left {
+  margin-left: 2%;
+  width: 58%;
+  justify-content: center;
+  margin: 1.5%;
+}
+.welcome-left h2 {
+  margin: 0;
+  color: black;
+}
+.welcome-left p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.7rem;
+  align-items: center;
+  margin: 0;
+}
+.welcome-left img {
+  width: 15%;
+}
+.welcome-right {
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.welcome button {
+  width: 50%;
+  min-height: 40px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgba(197, 139, 242, 1),
+    rgba(146, 163, 253, 1)
+  );
+}

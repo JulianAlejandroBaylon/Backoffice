@@ -35,21 +35,36 @@ body {
   align-items: center;
   text-align: center;
 }
-.mdc-text-field--filled:not(.mdc-text-field--disabled){background-color:transparent;}
-.mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent;
+}
+.mdc-text-field--no-label:not(.mdc-text-field--outlined):not(
+    .mdc-text-field--textarea
+  )
+  .mat-mdc-form-field-infix {
   padding-top: 0px;
   padding-bottom: 0px;
   display: flex;
-    align-items: center;
+  align-items: center;
 }
 
-.mat-mdc-form-field-subscript-wrapper{
+.mat-mdc-form-field-subscript-wrapper {
   display: none;
 }
 
 .mat-mdc-select-arrow svg {
-  fill: white;}
+  fill: white;
+}
 
-  .material-icons{
-    font-size: 32px
-  }
+.material-icons {
+  font-size: 32px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}

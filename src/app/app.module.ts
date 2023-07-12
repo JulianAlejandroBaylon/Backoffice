@@ -18,6 +18,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 
@@ -26,7 +27,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
   declarations: [
     AppComponent,
     HeaderComponent,
-    DashboardComponent
+    DashboardComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
