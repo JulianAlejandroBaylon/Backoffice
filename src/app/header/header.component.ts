@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   selected = 'USA';
+  isSelected: boolean = false;
+
+  toggleSelected() {
+    this.isSelected = !this.isSelected;
+  }
 }

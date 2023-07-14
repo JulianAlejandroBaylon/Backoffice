@@ -1,44 +1,67 @@
-span{
+span {
   margin: auto;
   color: white;
 }
-
-mat-icon{
+h1 {
+  font-size: 1.5vw;
+}
+.sections{
+  align-items: center;
+}
+.section {
+  cursor: pointer;
+  align-items: center;
   color: white;
-    width: auto;
-    height: auto;
+  margin: 10% 0% 0% 0%;
+  min-height: 7vh;
+  width: 80%;
+  font-size: 1vw;
+}
+.section:hover {
+  background-color: rgba(63, 38, 127, 1);
+  border-radius: 10px;
+}
+.section img {
+  margin: 5%;
+}
+mat-icon {
+  color: white;
+  width: auto;
+  height: auto;
 }
 
-.example-icon{
+.example-icon {
   background-color: transparent;
-    border: white;
-    width: auto;
+  border: white;
+  width: auto;
 }
 
-.sidenav, .navbar{
+.sidenav,
+.navbar {
   background-color: #150f42;
 }
-
-.navbar{
+.sidenav {
+  width: 15%;
+}
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.body{
+.body {
   background: var(
-        --web-gradient,
-        linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
-      );
+    --web-gradient,
+    linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
+  );
 }
 
-.title{
+.title {
   display: flex;
   width: 15%;
 }
 
-
-.options{
+.options {
   display: flex;
   align-items: center;
 }
@@ -51,15 +74,19 @@ mat-icon{
   overflow: unset;
 }
 
-mat-select{
+mat-select {
   color: white;
 }
 
-.notify{
+.notify {
   border-radius: 0.44819rem;
-background: var(--vrakka-habits-progress-bar-linear, linear-gradient(270deg, #C58BF2 1.94%, #92A3FD 100%));
+  background: var(
+    --vrakka-habits-progress-bar-linear,
+    linear-gradient(270deg, #c58bf2 1.94%, #92a3fd 100%)
+  );
 }
 
-.logo{
+.logo {
   display: flex;
+  align-items: center;
 }

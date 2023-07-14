@@ -1,1 +1,278 @@
-<p>products works!</p>
+<div class="container">
+  <app-welcome class="banner"></app-welcome>
+  <div class="content">
+    <div class="buttons">
+      <button class="part medium" (click)="changeContent('part1')">
+        Purchase products
+      </button>
+      <button class="part medium" (click)="changeContent('part2')">
+        My products
+      </button>
+    </div>
+    <div class="conts" *ngIf="selectedPart === 'part1'">
+      <div class="ttprod medium">
+        <h2>Want to make a purchase for yourself?</h2>
+      </div>
+      <div class="desc">
+        <p class="regular">
+          Take advantage of our exclusive package right now and get multiple
+          benefits that will take your experience to the next level - don't miss
+          the opportunity to enjoy a unique offer!
+        </p>
+        <p class="medium">Select the package you want to acquire</p>
+      </div>
+      <div class="products">
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">STARTER</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/2200.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">3</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                420 <span style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular">
+                Saving 12
+                <span class="r-regular" style="font-size: 0.5vw">US</span>
+              </p>
+              <button class="r-regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">BASIC</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/5000.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">6</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                575 <span class="r-regular" style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular">
+                Saving 25 <span style="font-size: 0.5vw">US</span>
+              </p>
+              <button class="regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">ESENTIAL</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/10000.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">9</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                575 <span class="r-regular" style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular">
+                Saving 25 <span style="font-size: 0.5vw">US</span>
+              </p>
+              <button class="regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">DELUXE</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/10000x2.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">12</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                575 <span class="r-regular" style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular">
+                Saving 25 <span style="font-size: 0.5vw">US</span>
+              </p>
+              <button class="regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-lg">
+          <div class="ttprod"><h3 class="title r-regular">MASTER</h3></div>
+          <div class="row">
+            <img class="packimg-lg" src="/assets/images/10000x2.png" alt="" />
+            <div class="data-prod-lg column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">12</span> modules
+                and trading course
+              </p>
+              <div class="row">
+                <div class="r-medium bg-price-lg">
+                  1620
+                  <span class="r-regular" style="font-size: 0.6vw">US</span>
+                </div>
+                <p class="r-regular">
+                  Saving 180 <span style="font-size: 1vw">US</span>
+                </p>
+              </div>
+              <button class="regular btn-prod btn-lg">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">Token VRK</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/10000.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">1</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                6 <span class="r-regular" style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular">
+                The minimum purchase <br />
+                is 100 tokens
+              </p>
+              <button class="regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="ttprod"><h3 class="title r-regular">NFT Vrakka</h3></div>
+          <div class="row">
+            <img class="packimg" src="/assets/images/10000x2.png" alt="" />
+            <div class="data-prod column">
+              <p class="r-regular">
+                Access to
+                <span style="color: rgba(197, 139, 242, 1)">1</span> modules
+              </p>
+              <div class="r-medium bg-price">
+                300 <span class="r-regular" style="font-size: 0.6vw">US</span>
+              </div>
+              <p class="r-regular"></p>
+              <button class="regular btn-prod">Get It Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="selectedPart === 'part2'">
+      <div class="conts">
+        <div class="ttprod medium">
+          <h2>My products</h2>
+        </div>
+        <div class="desc">
+          <p class="regular">
+            In this section products are displayed for the purpose of keeping an
+            accurate record of transactions made. However, the digital goods
+            themselves, such as NFTs and tokens, are not delivered directly
+            through our platform, they are sent directly to the address provided
+            from your Metamask wallet. It is crucial to ensure that this is
+            correct and verified before proceeding with the shipment of digital
+            goods.
+          </p>
+        </div>
+        <div class="products">
+          <div class="product">
+            <div class="ttprod">
+              <h3 class="title r-regular">VRK Tokens</h3>
+            </div>
+            <div class="row">
+              <img class="packimg" src="/assets/images/vrktokens.png" alt="" />
+              <div class="data-prod column">
+                <div class="r-medium">
+                  2,000 VRK
+                  <span class="r-regular" style="font-size: 0.6vw">S</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="ttprod">
+              <h3 class="title r-regular">Vrakka NFTs</h3>
+            </div>
+            <div class="row">
+              <img class="packimg" src="/assets/images/nfts.png" alt="" />
+              <div class="data-prod column">
+                <div class="r-medium">
+                  6 NFT
+                  <span class="r-regular" style="font-size: 0.6vw">S</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-lg">
+            <div class="ttprod">
+              <h3 class="title r-regular">Access to Vrakka Academy</h3>
+            </div>
+            <div class="row">
+              <img
+                class="packimg-lg-two"
+                src="/assets/images/academy.png"
+                alt=""
+              />
+              <div class="data-prod-lg column">
+                <p class="r-regular textcenter">Access to all modules</p>
+                <button class="regular btn-prod btn-lg btn-lg-t">
+                  Open Academy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="conts mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource" >
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+  
+          <!-- Position Column -->
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef>Purchase date</th>
+            <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+          </ng-container>
+  
+          <!-- Name Column -->
+          <ng-container matColumnDef="orderID">
+            <th mat-header-cell *matHeaderCellDef>OrderID</th>
+            <td mat-cell *matCellDef="let element">{{ element.order }}</td>
+          </ng-container>
+  
+          <!-- Weight Column -->
+          <ng-container matColumnDef="product">
+            <th mat-header-cell *matHeaderCellDef>Product</th>
+            <td mat-cell *matCellDef="let element">{{ element.product }}</td>
+          </ng-container>
+  
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef>price</th>
+            <td mat-cell *matCellDef="let element">{{ element.price }}</td>
+          </ng-container>
+  
+          <!-- status Column -->
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef>Status</th>
+            <td mat-cell *matCellDef="let element">{{ element.status }}</td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+  
+        <mat-paginator
+          [length]="100"
+          [pageSize]="5"
+          [pageSizeOptions]="[5, 10]"
+          (page)="data"
+        >
+        </mat-paginator>
+      </div>
+      
+    </div>
+  </div>
+</div>
