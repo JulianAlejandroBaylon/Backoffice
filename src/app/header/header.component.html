@@ -1,16 +1,16 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer class="sidenav" #drawer opened mode="side">
       <div class="logo">
-        <img src="assets/images/logonav.png" alt=""><h1>Vrakka</h1>
+        <img src="assets/images/logonav.png" alt=""><h1 class="medium" style="color: white;">Vrakka</h1>
       </div>
-      <div class="sections">
-        <div class="section"><img src="assets/icons/Chartcircle.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Product.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Shop.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Chart_line.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Support.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Close.svg" alt=""></div>
-        <div class="section"><img src="assets/icons/Close.svg" alt=""></div>
+      <div class="sections column">
+        <div class="section regular row" [ngClass]="{'selected': isSelected}" (click)="toggleSelected()" routerLink="/dashboard"><img src="assets/icons/Chartcircle.svg" alt="">Dashboard</div>
+        <div class="section regular row" [ngClass]="{'selected': isSelected}" (click)="toggleSelected()" routerLink="/products"><img src="assets/icons/Product.svg" alt="">Products</div>
+        <div class="section regular row"><img src="assets/icons/Shop.svg" alt="">Comissions</div>
+        <div class="section regular row"><img src="assets/icons/Chart_line.svg" alt="">Sales Report</div>
+        <div class="section regular row"><img src="assets/icons/Support.svg" alt="">Support</div>
+        <div class="section regular row"><img src="assets/icons/Close.svg" alt="">Businesses</div>
+        <div class="section regular row"><img src="assets/icons/Close.svg" alt="">Professionist</div>
       </div>
   </mat-drawer>
   <mat-drawer-content>
@@ -21,6 +21,7 @@
           class="example-icon"
           aria-label="Example icon-button with menu icon"
           (click)="drawer.toggle()"
+          style="cursor: pointer;"
         >
           <mat-icon>menu</mat-icon>
         </button>
@@ -47,6 +48,6 @@
     </mat-toolbar>
   </mat-drawer-content>
   <mat-drawer-content class="body">
-    <app-products></app-products>
+    <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

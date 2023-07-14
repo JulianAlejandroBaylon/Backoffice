@@ -19,6 +19,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -41,7 +44,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatToolbarModule,
     MatMenuModule,
     MatSelectModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTabsModule,
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent],

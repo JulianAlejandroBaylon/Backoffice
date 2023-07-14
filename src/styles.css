@@ -18,6 +18,18 @@ body {
   font-family: "Poppins-Thin";
   src: url(/assets/fonts/poppins/Poppins-Thin.ttf);
 }
+@font-face {
+  font-family: "Rubik-Regular";
+  src: url(/assets/fonts/rubik/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  src: url(/assets/fonts/rubik/Rubik-Medium.ttf);
+}
+@font-face {
+  font-family: "Rubik-Bold";
+  src: url(/assets/fonts/rubik/Rubik-Bold.ttf);
+}
 .regular {
   font-family: "Poppins-Regular";
 }
@@ -29,6 +41,15 @@ body {
 }
 .thin {
   font-family: "Poppins-Thin";
+}
+.r-regular{
+  font-family: "Rubik-Regular";
+}
+.r-medium{
+  font-family: "Rubik-Medium";
+}
+.r-bold{
+  font-family: "Rubik-Bold";
 }
 .title {
   justify-content: center;
@@ -67,4 +88,23 @@ body {
 .row {
   display: flex;
   flex-direction: row;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}  
+.conts {
+  border-radius: 15px;
+  width: 100%;
+  min-height: auto;
+  background-color: rgba(63, 38, 127, 1);
+  border: solid 1px rgba(255, 255, 255, 0.793);
+  box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.304);
+  margin: 2% 0% 0% 0%;
+}
+.banner{
+  width: 100%;
 }

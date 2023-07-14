@@ -1,0 +1,117 @@
+.mat-label {
+  color: white;
+}
+.content {
+  width: 100%;
+}
+.buttons {
+  margin-top: 5%;
+}
+.textcenter {
+  text-align: center;
+}
+.part {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1vw;
+}
+.conts {
+  color: white;
+}
+.desc {
+  margin: 3%;
+}
+.ttprod {
+  border-bottom: solid 1px white;
+}
+.ttprod h2 {
+  margin-left: 3%;
+}
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-lg {
+  width: 95%;
+  border-radius: 15px;
+  min-height: auto;
+  border: solid 1px rgba(255, 255, 255, 0.793);
+  margin: auto;
+}
+.product {
+  width: 45%;
+  border-radius: 15px;
+  min-height: auto;
+  border: solid 1px rgba(255, 255, 255, 0.793);
+  margin: 2% auto 2% auto;
+}
+.data-prod {
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+.data-prod-lg {
+  width: 70%;
+  justify-content: center;
+  margin: 2% auto 2% auto;
+}
+.bg-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to left,
+    rgba(1, 24, 90, 0.2),
+    rgba(151, 71, 255, 0.2)
+  );
+  border-radius: 10px;
+  width: 65%;
+  min-height: 30px;
+}
+.bg-price-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    rgba(255, 28, 247, 0.4),
+    rgba(0, 240, 255, 0.4)
+  );
+  border-radius: 10px;
+  width: 20%;
+  min-height: 30px;
+  font-size: 2vw;
+}
+.packimg {
+  width: 40%;
+}
+.packimg-lg {
+  width: 20%;
+}
+.packimg-lg-two {
+  width: 40%;
+}
+.btn-prod {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgba(197, 139, 242, 1),
+    rgba(146, 163, 253, 1)
+  );
+  cursor: pointer;
+}
+.btn-lg {
+  width: 35%;
+  margin-left: auto;
+}
+.btn-lg-t {
+  margin: auto;
+}
