@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,5 +12,10 @@ export class HeaderComponent {
 
   toggleSelected() {
     this.isSelected = !this.isSelected;
+  }
+  pageTitle = '';
+
+  section(sec: string) {
+    this.pageTitle = sec;
   }
 }

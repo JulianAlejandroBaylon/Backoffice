@@ -4,18 +4,19 @@ span {
 }
 h1 {
   font-size: 1.5vw;
+  margin: 7%;
 }
-.sections{
+.sections {
   align-items: center;
 }
 .section {
   cursor: pointer;
   align-items: center;
   color: white;
-  margin: 10% 0% 0% 0%;
-  min-height: 7vh;
+  margin: 5% 0% 0% 0%;
+  min-height: 6vh;
   width: 80%;
-  font-size: 1vw;
+  font-size: 0.7vw;
 }
 .section:hover {
   background-color: rgba(63, 38, 127, 1);
@@ -52,32 +53,28 @@ mat-icon {
 .body {
   background: var(
     --web-gradient,
-    linear-gradient(270deg, #92a3fd 0%, #3f267f 100%)
+    linear-gradient(270deg, rgba(146, 163, 253, 1) 0%, rgba(63, 38, 127, 1) 100%)
   );
+  min-height: 100vh;
 }
 
 .title {
   display: flex;
   width: 15%;
 }
-
 .options {
   display: flex;
   align-items: center;
 }
-
 .mat-drawer-content {
   position: relative;
   z-index: 1;
   display: block;
-  height: auto;
   overflow: unset;
 }
-
 mat-select {
   color: white;
 }
-
 .notify {
   border-radius: 0.44819rem;
   background: var(
@@ -85,8 +82,61 @@ mat-select {
     linear-gradient(270deg, #c58bf2 1.94%, #92a3fd 100%)
   );
 }
-
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.get-mat {
+  border-radius: 25px;
+  background-color: rgba(63, 38, 127, 1);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ocultar contenido fuera del contenedor */
+  margin: auto;
+  width: 80%;
+}
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.top-right {
+  top: -25px;
+  right: -25px;
+  background-color: rgba(131, 72, 183, 0.31);  
+  z-index: -1;
+}
+
+.bottom-left {
+  bottom: -25px;
+  left: -25px;
+  background-color: rgba(164, 128, 254, 0.378);
+  z-index: -1;
+}
+.get-mat-cont{
+  width: 80%;
+  margin: 10% 0% 10% 0%;
+  z-index: 1; 
+}
+.get-mat-cont p{
+  font-size: 0.7vw;
+  color: white;
+}
+.get-mat-cont button{
+  font-size: 1vw;
+  color: rgba(63, 38, 127, 1);
+  width: 80%;
+  border-radius: 10px;
+  min-height: 5vh;
+  border: none;
+  cursor: pointer;
+}
+.disabled{
+  color: rgba(94, 87, 87, 0.892);
+  pointer-events: none; /* Deshabilitar la interacción con el div */
 }
