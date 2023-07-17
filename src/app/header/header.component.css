@@ -53,7 +53,11 @@ mat-icon {
 .body {
   background: var(
     --web-gradient,
-    linear-gradient(270deg, rgba(146, 163, 253, 1) 0%, rgba(63, 38, 127, 1) 100%)
+    linear-gradient(
+      270deg,
+      rgba(146, 163, 253, 1) 0%,
+      rgba(63, 38, 127, 1) 100%
+    )
   );
   min-height: 100vh;
 }
@@ -64,6 +68,8 @@ mat-icon {
 }
 .options {
   display: flex;
+  width: 40%;
+  justify-content: center;
   align-items: center;
 }
 .mat-drawer-content {
@@ -108,7 +114,7 @@ mat-select {
 .top-right {
   top: -25px;
   right: -25px;
-  background-color: rgba(131, 72, 183, 0.31);  
+  background-color: rgba(131, 72, 183, 0.31);
   z-index: -1;
 }
 
@@ -118,16 +124,16 @@ mat-select {
   background-color: rgba(164, 128, 254, 0.378);
   z-index: -1;
 }
-.get-mat-cont{
+.get-mat-cont {
   width: 80%;
   margin: 10% 0% 10% 0%;
-  z-index: 1; 
+  z-index: 1;
 }
-.get-mat-cont p{
+.get-mat-cont p {
   font-size: 0.7vw;
   color: white;
 }
-.get-mat-cont button{
+.get-mat-cont button {
   font-size: 1vw;
   color: rgba(63, 38, 127, 1);
   width: 80%;
@@ -136,7 +142,23 @@ mat-select {
   border: none;
   cursor: pointer;
 }
-.disabled{
+.disabled {
   color: rgba(94, 87, 87, 0.892);
   pointer-events: none; /* Deshabilitar la interacción con el div */
+}
+.btnuser {
+  width: 35%;
+  min-height: 5vh;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(18, 128, 190, 0.2),
+    rgba(99, 25, 169, 0.2)
+  );
+  color: white;
+  cursor: pointer;
+}
+.menu {
+  min-width: 175px;
 }
