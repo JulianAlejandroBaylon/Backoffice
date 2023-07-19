@@ -1,1 +1,134 @@
-<p>settings works!</p>
+<div class="container">
+  <div class="buttons">
+    <button class="part medium" (click)="changeContent('part1')">
+      Account
+    </button>
+    <button class="part medium" (click)="changeContent('part2')">
+      Wallets
+    </button>
+  </div>
+
+  <div class="cont-s" *ngIf="selectedPart === 'part1'">
+    <div class="conts">
+      <div class="ttprod medium">
+        <h2>Personal data</h2>
+      </div>
+      <div class="inpts">
+        <div class="column">
+          <h3 class="thin">Name</h3>
+          <input
+            class="r-input regular"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+        <div class="column">
+          <h3 class="thin">Username</h3>
+          <input
+            class="r-input regular"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+        <div class="column">
+          <h3 class="thin">Email</h3>
+          <input
+            class="r-input regular"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+        <div class="column">
+          <h3 class="thin">Country</h3>
+          <input
+            class="r-input regular"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+        <div class="column">
+          <h3 class="thin">Email</h3>
+          <input
+            class="r-input regular mg-5"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+        <div class="column">
+          <h3 class="thin">Date of birth</h3>
+          <input
+            class="r-input regular mg-5"
+            type="text"
+            value="   VARIABLE"
+            readonly
+          />
+        </div>
+      </div>
+    </div>
+    <div class="conts">
+      <div class="ttprod medium">
+        <h2>Password</h2>
+      </div>
+      <div class="inpts-p column">
+        <div class="p-input r-input regular row">
+          <img src="/assets/icons/Pass.svg" alt="" />
+          <input class="pass-in" placeholder=" Old Password" type="password" />
+        </div>
+        <div class="p-input r-input regular row">
+          <img src="/assets/icons/Pass.svg" alt="" />
+          <input class="pass-in" placeholder=" New Password" type="password" />
+        </div>
+        <div class="relative row">
+          <div class="p-input r-input regular row">
+            <img src="/assets/icons/Pass.svg" alt="" />
+            <input
+              class="pass-in"
+              placeholder=" Repeat New Password"
+              type="password"
+            />
+          </div>
+          <button class="btnpurple savebtn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cont-s" *ngIf="selectedPart === 'part2'">
+    <div class="conts">
+      <div class="ttprod medium">
+        <h2>Enter your wallet for payments</h2>
+      </div>
+      <div class="relative row">
+        <div class="p-input r-input regular row">
+          <img src="/assets/icons/Pass.svg" alt="" />
+          <input
+            class="pass-in"
+            placeholder=" Wallet"
+            type="number"
+          />
+        </div>
+        <button class="btnpurple savebtn">Save</button>
+      </div>
+    </div>
+    <div class="conts">
+      <div class="ttprod medium">
+        <h2>Enter your Metamask wallet to send you your digital products</h2>
+      </div>
+      <div class="relative row">
+        <div class="p-input r-input regular row">
+          <img src="/assets/icons/Pass.svg" alt="" />
+          <input
+            class="pass-in"
+            placeholder=" Wallet"
+            type="number"
+          />
+        </div>
+        <button class="btnpurple savebtn">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

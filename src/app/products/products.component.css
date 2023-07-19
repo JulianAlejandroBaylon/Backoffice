@@ -10,13 +10,6 @@
 .textcenter {
   text-align: center;
 }
-.part {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 1vw;
-}
 .conts {
   color: white;
   overflow: hidden;
@@ -28,12 +21,6 @@
 }
 .desc {
   margin: 3%;
-}
-.ttprod {
-  border-bottom: solid 1px white;
-}
-.ttprod h2 {
-  margin-left: 3%;
 }
 .products {
   width: 100%;

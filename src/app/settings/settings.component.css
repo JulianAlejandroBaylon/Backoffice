@@ -1,0 +1,55 @@
+.cont-s {
+  width: 100%;
+  min-height: auto;
+  color: white;
+}
+.r-input {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 4vh;
+  background: linear-gradient(
+    to top,
+    rgba(169, 239, 255, 0.19) 30%,
+    rgba(234, 219, 255, 0.349) 100%
+  );
+  border: solid 1px white;
+  color: white;
+}
+.inpts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 45%;
+  margin: auto;
+}
+.thin {
+  font-size: 0.8rem;
+}
+.pass-in {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+::placeholder {
+  color: white;
+}
+.p-input{
+    margin: 1% 2% 1% 2%;
+    width: 45%;
+}
+.inpts-p{
+    margin: 2% 0% 2% 0%;
+    width: 100%;
+}
+.savebtn{
+    width: 5%;
+    position: absolute;
+    right: 5%;
+}
+.relative{
+    position: relative;
+}
+.mg-5{
+  margin-bottom: 5%;
+}

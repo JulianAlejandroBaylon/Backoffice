@@ -58,13 +58,13 @@
         <div class="circle bottom-left"></div>
         <img src="/assets/images/logonav2.png" alt="" />
         <p>Get access to all information you need to share.</p>
-        <button class="bold">Get Material</button>
+        <button class="bold" routerLink="/material">Get Material</button>
       </div>
     </div>
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar class="navbar">
-      <div class="title">
+      <div class="title">        
         <button
           mat-icon-button
           class="example-icon"
@@ -90,10 +90,10 @@
         <button class="notify">
           <img src="assets/icons/Bell.svg" alt="" />
         </button>
-        <button class="btnuser"mat-button [matMenuTriggerFor]="menu">User <img src="/assets/icons/Arrowdown.svg" alt=""></button>
+        <button class="btnuser"mat-button [matMenuTriggerFor]="menu"><div class="circle">U.S</div><span>User</span> <img src="/assets/icons/Arrowdown.svg" alt=""></button>
         <mat-menu  #menu="matMenu">
-          <button class="menu" mat-menu-item routerLink="/settings">Settings</button>
-          <button class="menu" mat-menu-item>Log out</button>
+          <button class="menu" mat-menu-item routerLink="/settings"> <img src="/assets/icons/Settings.svg" alt="">Settings</button>
+          <button class="menu" mat-menu-item><img src="/assets/icons/Logout.svg" alt="">Log out</button>
         </mat-menu>
       </div>
     </mat-toolbar>

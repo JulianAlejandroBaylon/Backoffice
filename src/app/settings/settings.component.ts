@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./settings.component.css']
 })
 export class SettingsComponent {
-
+  selectedPart: string = 'part1';
+  changeContent(part: string) {
+    this.selectedPart = part;
+  }
 }

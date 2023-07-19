@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   progressValueIphone: number = 52;
   progressValueTrip: number = 21;
+
+  defaultValueIphone: number = 40;
+  defaultValueLaunch: number = 30;
 }

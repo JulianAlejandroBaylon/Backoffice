@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule,Title  } from '@angular/platform-browser';
-
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -24,6 +24,8 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
+import {MatSliderModule} from '@angular/material/slider';
+import { MaterialComponent } from './material/material.component';
 
 
 
@@ -38,7 +40,8 @@ import {MatInputModule} from '@angular/material/input';
     SupportComponent,
     ComissionsComponent,
     SalesReportComponent,
-    SettingsComponent
+    SettingsComponent,
+    MaterialComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,9 @@ import {MatInputModule} from '@angular/material/input';
     MatTableModule,
     MatPaginatorModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatSliderModule,
+    FormsModule
   ],
   providers: [Title],
   bootstrap: [AppComponent],

@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { SupportComponent } from './support/support.component';
 import { SettingsComponent } from './settings/settings.component';
+import { MaterialComponent } from './material/material.component';
 const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent,},
   {path: 'welcome', component: WelcomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'sales-report', component: SalesReportComponent},
   {path: 'support', component: SupportComponent},
   {path: 'settings', component: SettingsComponent},
+  {path: 'material', component: MaterialComponent},
 ];
 
 @NgModule({

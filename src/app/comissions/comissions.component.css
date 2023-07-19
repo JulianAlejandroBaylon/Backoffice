@@ -41,15 +41,6 @@ td,
 th {
   color: rgba(197, 139, 242, 1);
 }
-.btnview{
-  border-radius: 10px;
-  background: linear-gradient(to left, rgba(197, 139, 242, 0.5),rgba(238, 164, 206, 0.5));
-  width: 30%;
-  min-height: 4.5vh;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
 .btnexport{
   margin: auto 5% auto auto;
   width: 10%;
