@@ -44,18 +44,26 @@
       </div>
     </div>
   </div>
-  <div class="goals conts">
+  <div class="goals conts column">
     <div>
       <h2 class="title regular">Goals & Rewards</h2>
     </div>
-    <div>
-      <p>Complete the NFTs Sales Goal to earn the Reward</p>
-      <mat-slider>
-        <input matSliderThumb [(ngModel)]="defaultValueIphone" [disabled]="true"#slider>
-      </mat-slider>
-      <mat-slider>
-        <input matSliderThumb [(ngModel)]="defaultValueLaunch" [disabled]="true"#slider>
-      </mat-slider>
+    <div class="infocont">
+      <p class="regular">Complete the NFTs Sales Goal to earn the Reward</p>
+      <div>
+        <p class="colortxt bold mg-0">Latest generation Iphone </p>
+        <p class="regular mg-0">Up-to-date: 70</p>
+        <mat-slider>
+          <input matSliderThumb [(ngModel)]="defaultValueIphone" [disabled]="true"#slider>
+        </mat-slider>
+      </div>
+      <div>
+        <p class="colortxt bold mg-0">Trip to Dubai - Company Launch</p>
+        <p class="regular mg-0">Up-to-date: 70</p>
+        <mat-slider>
+          <input matSliderThumb [(ngModel)]="defaultValueLaunch" [disabled]="true"#slider>
+        </mat-slider>
+      </div>      
     </div>
   </div>
   <div class="offer conts row">
@@ -67,7 +75,7 @@
         private rounds with amazing benefits. Act now and secure your spot
         before the closure date.
       </p>
-      <button class="btns medium">Acquire Packages</button>
+      <button class="btns medium" style="cursor: pointer;">Acquire Packages</button>
     </div>
     <div class="row">
       <img src="/assets/images/academy-large.png" alt="" />

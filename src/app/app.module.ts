@@ -60,7 +60,7 @@ import { MaterialComponent } from './material/material.component';
     MatRadioModule,
     MatInputModule,
     MatSliderModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [Title],
   bootstrap: [AppComponent],

@@ -149,6 +149,7 @@ body {
   cursor: pointer;
 }
 .mat-mdc-slider{
-  --mdc-slider-disabled-handle-color: rgb(190, 138, 18);
-  --mdc-slider-disabled-active-track-color: rgba(99, 25, 169, 1);
+  --mdc-slider-disabled-handle-color: rgba(18, 128, 190, 1);
+  --mdc-slider-disabled-active-track-color: rgba(18, 128, 190, 1);
+  --mdc-slider-disabled-inactive-track-color: white;
 }

@@ -46,10 +46,14 @@
     width: 5%;
     position: absolute;
     right: 5%;
+    top: 15%;
 }
 .relative{
     position: relative;
 }
 .mg-5{
   margin-bottom: 5%;
+}
+.example-spacer{
+  flex: 1 1 auto;
 }

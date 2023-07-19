@@ -65,8 +65,18 @@ mat-slider {
   width: 100%;
 }
 .goals {
+  color: white;
+  align-items: center;
 }
-
+.colortxt{
+  background: linear-gradient(to left, rgba(225, 23, 253, 1) 75%, rgba(13, 193, 229, 1) 83%, rgba(62, 109, 241, 1)93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+}
+.infocont{
+  width: 90%;
+}
 .offer {
   color: white;
   justify-content: center;
@@ -109,4 +119,7 @@ mat-slider {
 }
 .sub {
   width: 45%;
+}
+.mg-0{
+  margin: 0;
 }

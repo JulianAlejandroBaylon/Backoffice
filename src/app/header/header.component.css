@@ -87,6 +87,8 @@ mat-select {
     --vrakka-habits-progress-bar-linear,
     linear-gradient(270deg, #c58bf2 1.94%, #92a3fd 100%)
   );
+  cursor: pointer;
+  border: none;
 }
 .logo {
   display: flex;
