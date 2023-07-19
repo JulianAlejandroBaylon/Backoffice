@@ -42,13 +42,13 @@ body {
 .thin {
   font-family: "Poppins-Thin";
 }
-.r-regular{
+.r-regular {
   font-family: "Rubik-Regular";
 }
-.r-medium{
+.r-medium {
   font-family: "Rubik-Medium";
 }
-.r-bold{
+.r-bold {
   font-family: "Rubik-Bold";
 }
 .title {
@@ -95,7 +95,7 @@ body {
   width: 85%;
   margin: auto;
   justify-content: space-between;
-}  
+}
 .conts {
   border-radius: 15px;
   width: 100%;
@@ -105,6 +105,50 @@ body {
   box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.304);
   margin: 2% 0% 0% 0%;
 }
-.banner{
+.banner {
   width: 100%;
+}
+.mat-mdc-select-arrow svg {
+  color: white;
+}
+.mat-mdc-menu-panel.mat-mdc-menu-panel {
+  background: linear-gradient(
+    to right,
+    rgba(23, 35, 91, 1),
+    rgba(34, 22, 88, 1)
+  );
+}
+.mat-mdc-menu-content,
+.mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
+  color: white;
+}
+.mat-mdc-menu-item .mdc-list-item__primary-text{
+  display: flex;
+  align-items: center;
+}
+.part {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1vw;
+}
+.ttprod {
+  border-bottom: solid 1px white;
+}
+.ttprod h2 {
+  margin-left: 3%;
+}
+.btnpurple{
+  border-radius: 10px;
+  background: linear-gradient(to left, rgba(197, 139, 242, 0.5),rgba(238, 164, 206, 0.5));
+  width: 30%;
+  min-height: 4.5vh;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.mat-mdc-slider{
+  --mdc-slider-disabled-handle-color: rgb(190, 138, 18);
+  --mdc-slider-disabled-active-track-color: rgba(99, 25, 169, 1);
 }

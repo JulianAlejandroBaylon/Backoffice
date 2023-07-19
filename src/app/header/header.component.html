@@ -1,35 +1,84 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer class="sidenav" #drawer opened mode="side">
-      <div class="logo">
-        <img src="assets/images/logonav.png" alt=""><h1 class="medium" style="color: white;">Vrakka</h1>
+    <div class="logo">
+      <img src="assets/images/logonav.png" alt="" />
+      <h1 class="medium" style="color: white">Vrakka</h1>
+    </div>
+    <div class="sections column">
+      <div
+        class="section regular row"
+        [ngClass]="{ selected: isSelected }"
+        (click)="section('Dashboard')"
+        routerLink="/dashboard"
+      >
+        <img src="assets/icons/Chartcircle.svg" alt="" />Dashboard
       </div>
-      <div class="sections column">
-        <div class="section regular row" [ngClass]="{'selected': isSelected}" (click)="toggleSelected()" routerLink="/dashboard"><img src="assets/icons/Chartcircle.svg" alt="">Dashboard</div>
-        <div class="section regular row" [ngClass]="{'selected': isSelected}" (click)="toggleSelected()" routerLink="/products"><img src="assets/icons/Product.svg" alt="">Products</div>
-        <div class="section regular row"><img src="assets/icons/Shop.svg" alt="">Comissions</div>
-        <div class="section regular row"><img src="assets/icons/Chart_line.svg" alt="">Sales Report</div>
-        <div class="section regular row"><img src="assets/icons/Support.svg" alt="">Support</div>
-        <div class="section regular row"><img src="assets/icons/Close.svg" alt="">Businesses</div>
-        <div class="section regular row"><img src="assets/icons/Close.svg" alt="">Professionist</div>
+      <div
+        class="section regular row"
+        [ngClass]="{ selected: isSelected }"
+        (click)="section('Products')"
+        routerLink="/products"
+      >
+        <img src="assets/icons/Product.svg" alt="" />Products
       </div>
+      <div
+        class="section regular row"
+        [ngClass]="{ selected: isSelected }"
+        (click)="section('Comissions')"
+        routerLink="/comissions"
+      >
+        <img src="assets/icons/Shop.svg" alt="" />Comissions
+      </div>
+      <div
+        class="section regular row"
+        [ngClass]="{ selected: isSelected }"
+        (click)="section('Sales Report')"
+        routerLink="/sales-report"
+      >
+        <img src="assets/icons/Chart_line.svg" alt="" />Sales Report
+      </div>
+      <div
+        class="section regular row"
+        [ngClass]="{ selected: isSelected }"
+        (click)="section('Support')"
+        routerLink="/support"
+      >
+        <img src="assets/icons/Support.svg" alt="" />Support
+      </div>
+      <div class="section regular row disabled">
+        <img src="assets/icons/Close.svg" alt="" />Businesses
+      </div>
+      <div class="section regular row disabled">
+        <img src="assets/icons/Close.svg" alt="" />Professionist
+      </div>
+    </div>
+    <div class="column get-mat regular">
+      <div class="get-mat-cont">
+        <div class="circle top-right"></div>
+        <div class="circle bottom-left"></div>
+        <img src="/assets/images/logonav2.png" alt="" />
+        <p>Get access to all information you need to share.</p>
+        <button class="bold" routerLink="/material">Get Material</button>
+      </div>
+    </div>
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar class="navbar">
-      <div class="title">
+      <div class="title">        
         <button
           mat-icon-button
           class="example-icon"
           aria-label="Example icon-button with menu icon"
           (click)="drawer.toggle()"
-          style="cursor: pointer;"
+          style="cursor: pointer"
         >
           <mat-icon>menu</mat-icon>
         </button>
-        <span>Dashboard</span>
+        <span>{{ pageTitle }}</span>
       </div>
       <div class="options">
-        <img *ngIf="selected=='USA'" src="assets/icons/USA.svg" alt="">
-        <img *ngIf="selected=='MX'" src="assets/icons/MX.svg" alt="">
+        <img *ngIf="selected == 'USA'" src="assets/icons/USA.svg" alt="" />
+        <img *ngIf="selected == 'MX'" src="assets/icons/MX.svg" alt="" />
         <div class="idioma">
           <mat-form-field>
             <mat-select [(value)]="selected">
@@ -39,11 +88,13 @@
           </mat-form-field>
         </div>
         <button class="notify">
-         <img src="assets/icons/Bell.svg" alt="">
+          <img src="assets/icons/Bell.svg" alt="" />
         </button>
-        <button class="btnUser">
-          <div class="user">User</div>
-        </button>
+        <button class="btnuser"mat-button [matMenuTriggerFor]="menu"><div class="circle">U.S</div><span>User</span> <img src="/assets/icons/Arrowdown.svg" alt=""></button>
+        <mat-menu  #menu="matMenu">
+          <button class="menu" mat-menu-item routerLink="/settings"> <img src="/assets/icons/Settings.svg" alt="">Settings</button>
+          <button class="menu" mat-menu-item><img src="/assets/icons/Logout.svg" alt="">Log out</button>
+        </mat-menu>
       </div>
     </mat-toolbar>
   </mat-drawer-content>

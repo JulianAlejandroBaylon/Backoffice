@@ -23,7 +23,9 @@
       </div>
       <div class="products">
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">STARTER</h3></div>
+          <div class="ttprod starter-bg">
+            <h3 class="title r-regular ttp row">STARTER</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/2200.png" alt="" />
             <div class="data-prod column">
@@ -43,7 +45,9 @@
           </div>
         </div>
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">BASIC</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row basic-bg">BASIC</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/5000.png" alt="" />
             <div class="data-prod column">
@@ -62,7 +66,9 @@
           </div>
         </div>
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">ESENTIAL</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row esential-bg">ESENTIAL</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/10000.png" alt="" />
             <div class="data-prod column">
@@ -81,7 +87,9 @@
           </div>
         </div>
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">DELUXE</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row deluxe-bg">DELUXE</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/10000x2.png" alt="" />
             <div class="data-prod column">
@@ -100,7 +108,9 @@
           </div>
         </div>
         <div class="product-lg">
-          <div class="ttprod"><h3 class="title r-regular">MASTER</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row master-bg">MASTER</h3>
+          </div>
           <div class="row">
             <img class="packimg-lg" src="/assets/images/10000x2.png" alt="" />
             <div class="data-prod-lg column">
@@ -123,7 +133,9 @@
           </div>
         </div>
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">Token VRK</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row">Token VRK</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/10000.png" alt="" />
             <div class="data-prod column">
@@ -143,7 +155,9 @@
           </div>
         </div>
         <div class="product">
-          <div class="ttprod"><h3 class="title r-regular">NFT Vrakka</h3></div>
+          <div class="ttprod">
+            <h3 class="title r-regular ttp row">NFT Vrakka</h3>
+          </div>
           <div class="row">
             <img class="packimg" src="/assets/images/10000x2.png" alt="" />
             <div class="data-prod column">
@@ -206,7 +220,7 @@
               </div>
             </div>
           </div>
-          <div class="product-lg">
+          <div class="product-lg data-prod-lg-t">
             <div class="ttprod">
               <h3 class="title r-regular">Access to Vrakka Academy</h3>
             </div>
@@ -227,35 +241,26 @@
         </div>
       </div>
       <div class="conts mat-elevation-z8">
-        <table mat-table [dataSource]="dataSource" >
-          <!--- Note that these columns can be defined in any order.
-                The actual rendered columns are set as a property on the row definition" -->
-
-          <!-- Position Column -->
+        <table mat-table [dataSource]="dataSource">
+          <caption class="title tb-title regular">
+            <h2>Purchase history</h2>
+          </caption>
           <ng-container matColumnDef="date">
             <th mat-header-cell *matHeaderCellDef>Purchase date</th>
             <td mat-cell *matCellDef="let element">{{ element.date }}</td>
           </ng-container>
-
-          <!-- Name Column -->
           <ng-container matColumnDef="orderID">
             <th mat-header-cell *matHeaderCellDef>OrderID</th>
             <td mat-cell *matCellDef="let element">{{ element.order }}</td>
           </ng-container>
-
-          <!-- Weight Column -->
           <ng-container matColumnDef="product">
             <th mat-header-cell *matHeaderCellDef>Product</th>
             <td mat-cell *matCellDef="let element">{{ element.product }}</td>
           </ng-container>
-
-          <!-- Symbol Column -->
           <ng-container matColumnDef="price">
             <th mat-header-cell *matHeaderCellDef>price</th>
             <td mat-cell *matCellDef="let element">{{ element.price }}</td>
           </ng-container>
-
-          <!-- status Column -->
           <ng-container matColumnDef="status">
             <th mat-header-cell *matHeaderCellDef>Status</th>
             <td mat-cell *matCellDef="let element">{{ element.status }}</td>
@@ -268,11 +273,10 @@
           [length]="100"
           [pageSize]="5"
           [pageSizeOptions]="[5, 10]"
-          (page)="data"
+          (page)="(data)"
         >
         </mat-paginator>
       </div>
-
     </div>
   </div>
 </div>

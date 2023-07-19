@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-
+import { BrowserModule,Title  } from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +22,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatInputModule} from '@angular/material/input';
+import {MatSliderModule} from '@angular/material/slider';
+import { MaterialComponent } from './material/material.component';
 
 
 
@@ -33,7 +36,12 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     HeaderComponent,
     DashboardComponent,
     WelcomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    SupportComponent,
+    ComissionsComponent,
+    SalesReportComponent,
+    SettingsComponent,
+    MaterialComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +57,13 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatProgressBarModule,
     MatTabsModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatRadioModule,
+    MatInputModule,
+    MatSliderModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

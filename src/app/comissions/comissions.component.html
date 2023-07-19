@@ -1,1 +1,51 @@
-<p>comissions works!</p>
+<div class="container">
+  <div class="conts white">
+    <div class="row top-bal">
+      <div class="left">
+        <h3 class="regular mg-bot-0">Total Balance</h3>
+        <p class="thin purp mg-top-0">Comisions + Bonuses</p>
+      </div>
+      <h2 class="medium left">VARIABLE <span>USD</span> </h2>
+    </div>
+    <div class="bot-bal left">
+        <h3 class="regular mg-bot-0">Wallet on which you are receiving your commissions: <span class="purp">VARIABLE</span></h3>
+        <p class="thin mg-top-0">Change the payment details in the "settings" section</p>
+    </div>
+  </div>
+  <div class="conts mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+      <caption class="title tb-title regular">
+        <div class="row">
+          <h2>Comisions Details</h2>
+          <button class="btnexport"><img style="width: .8rem;" src="/assets/icons/export.svg" alt=""> Export</button>
+        </div>        
+      </caption>
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>Week</th>
+        <td mat-cell *matCellDef="let element">{{ element.date }}</td>
+      </ng-container>
+      <ng-container matColumnDef="orderID">
+        <th mat-header-cell *matHeaderCellDef>Amount</th>
+        <td mat-cell *matCellDef="let element">{{ element.amount }}</td>
+      </ng-container>
+      <ng-container matColumnDef="product">
+        <th mat-header-cell *matHeaderCellDef>Description</th>
+        <td mat-cell *matCellDef="let element">{{ element.desc }}</td>
+      </ng-container>
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef>Details</th>
+        <td mat-cell *matCellDef="let element"><button class="btnpurple">View</button></td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator
+      [length]="100"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10]"
+      (page)="(data)"
+    >
+    </mat-paginator>
+  </div>
+</div>

@@ -50,23 +50,12 @@
     </div>
     <div>
       <p>Complete the NFTs Sales Goal to earn the Reward</p>
-      <div class="progress-wrapper">
-        <div
-          class="progress-end-dot"
-          [style.left.%]="progressValueIphone"
-        ></div>
-        <mat-progress-bar
-          mode="determinate"
-          [value]="progressValueIphone"
-        ></mat-progress-bar>
-      </div>
-      <div class="progress-wrapper">
-        <div class="progress-end-dot" [style.left.%]="progressValueTrip"></div>
-        <mat-progress-bar
-          mode="determinate"
-          [value]="progressValueTrip"
-        ></mat-progress-bar>
-      </div>
+      <mat-slider>
+        <input matSliderThumb [(ngModel)]="defaultValueIphone" [disabled]="true"#slider>
+      </mat-slider>
+      <mat-slider>
+        <input matSliderThumb [(ngModel)]="defaultValueLaunch" [disabled]="true"#slider>
+      </mat-slider>
     </div>
   </div>
   <div class="offer conts row">

@@ -61,50 +61,48 @@
 .progress-label {
   position: relative;
 }
-mat-progress-bar {
-  background-color: white;
-  border-radius: 25px;
-  min-height: 10px;
+mat-slider {
+  width: 100%;
 }
 .goals {
 }
 
 .offer {
-    color: white;
-    justify-content: center;
+  color: white;
+  justify-content: center;
 }
-.oftext{
-    align-items: center;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    padding-bottom: 2.4%;
+.oftext {
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 2.4%;
 }
-.offer button{
-    width: 50%;
-    min-height: 40px;
-    border-radius: 50px;
-    border: none;
-    color: white;
-    background: linear-gradient(
+.offer button {
+  width: 50%;
+  min-height: 40px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background: linear-gradient(
     to right,
     rgba(18, 128, 190, 1),
     rgba(99, 25, 169, 1)
-  ); 
+  );
 }
-.offer img{
-    margin: auto;
-    width: 75%;
+.offer img {
+  margin: auto;
+  width: 75%;
 }
 .promos {
-    color: white;
+  color: white;
 }
-.promimg{
-    justify-content: space-between;
-    margin: 3%;
+.promimg {
+  justify-content: space-between;
+  margin: 3%;
 }
-.promimg img{
-    width: 30%;
+.promimg img {
+  width: 30%;
 }
 .mapping {
   width: 45%;
