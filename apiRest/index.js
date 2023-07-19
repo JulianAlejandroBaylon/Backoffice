@@ -1,10 +1,14 @@
 require('./config/conexion')
-
+const cors = require('cors');
 const express = require('express');
 const port = (process.env.port || 3000);
 
+
 //express
 const app = express();
+
+//cors
+app.use(cors());
 
 //admitir tipo de datos
 app.use(express.json())

@@ -27,9 +27,9 @@ routes.get('/:id', (req, res)=>{
 
 //metodo agregar
 routes.post('/', (req, res)=>{
-    const{nick, name} = req.body
+    const{nick, name, rol, stat} = req.body
 
-    let sql = `insert into Users(nick, name) values('${nick}', '${name}')`
+    let sql = `insert into Users(nick, name, rol, stat) values('${nick}', '${name}', '${rol}', '${stat}')`
     conexion.query(sql,(err, rows, fields)=>{
         if(err) throw err;
         else{
@@ -54,13 +54,15 @@ routes.delete('/:id',(req, res)=>{
 //actualizar
 routes.put('/:id',(req, res)=>{
     const{id}=req.params
-    const{name, nick} = req.body
+    const{name, nick, rol, stat} = req.body
 
-    let sql = `update Users set 
+    let sql = `update Users set
                 name ='${name}',
-                nick='${nick}'
+                nick='${nick}',
+                rol='${rol}',
+                stat='${stat}'
                 where id = '${id}'`
-    
+
     conexion.query(sql, (err, rows, fields)=>{
         if(err) throw err
         else{
