@@ -5,7 +5,14 @@
   </div>
   <div>
     <h3>Videos</h3>
-    <div></div>
+    <div>
+      <div (click)="openFileExplorer()" class="example-ripple-container mat-elevation-z4" matRipple>
+        <div class="square">
+          <input type="file" #fileInput style="display: none" />
+        </div>        
+        <div>Compensation Plan</div>        
+      </div>
+    </div>
   </div>
   <div>
     <h3>Logos</h3>

@@ -1,6 +1,9 @@
 .balance {
   color: white;
 }
+.balance .title{
+  flex-wrap: wrap;
+}
 .squares {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,7 +20,7 @@
   margin: auto;
   width: 60%;
   align-items: center;
-  font-size: 1vw;
+  font-size: 1rem;
   padding-top: 5%;
 }
 .h3sq span {
@@ -80,11 +83,12 @@ mat-slider {
 .offer {
   color: white;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .oftext {
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 55%;
   margin: auto;
   padding-bottom: 2.4%;
 }
@@ -122,4 +126,34 @@ mat-slider {
 }
 .mg-0{
   margin: 0;
+}
+
+@media (max-width:576px) {
+  .balance .title h3,h2{
+    flex-basis: 80%;
+  }
+  .squares{
+    justify-content: center;
+  }
+  .square{
+    flex-basis: 80%;
+    margin: 5%;
+  }
+  .offer img{
+    margin: 10%;
+  }
+  .oftext{
+    flex-basis: 80%;
+  }
+  .offer .row{
+    flex-basis: 80%;
+  }
+  .promimg{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promimg img {
+    width: 80%;
+    margin: 5%;
+  }
 }

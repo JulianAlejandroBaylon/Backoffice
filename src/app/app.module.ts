@@ -26,6 +26,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import { MaterialComponent } from './material/material.component';
+import {MatRippleModule} from '@angular/material/core';
 
 
 
@@ -60,7 +61,7 @@ import { MaterialComponent } from './material/material.component';
     MatRadioModule,
     MatInputModule,
     MatSliderModule,
-    FormsModule,
+    FormsModule,MatRippleModule
   ],
   providers: [Title],
   bootstrap: [AppComponent],

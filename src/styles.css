@@ -57,7 +57,7 @@ body {
   text-align: center;
 }
 .mdc-text-field--filled:not(.mdc-text-field--disabled) {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(
     .mdc-text-field--textarea
@@ -118,6 +118,9 @@ body {
     rgba(34, 22, 88, 1)
   );
 }
+.mdc-text-field--filled:not(.mdc-text-field--disabled){
+  background-color: none;
+}
 .mat-mdc-menu-content,
 .mat-mdc-menu-content .mat-mdc-menu-item .mdc-list-item__primary-text {
   color: white;
@@ -131,7 +134,7 @@ body {
   border: none;
   cursor: pointer;
   color: white;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .ttprod {
   border-bottom: solid 1px white;
@@ -142,14 +145,14 @@ body {
 .btnpurple{
   border-radius: 10px;
   background: linear-gradient(to left, rgba(197, 139, 242, 0.5),rgba(238, 164, 206, 0.5));
-  width: 30%;
+  width: 5rem;
   min-height: 4.5vh;
   border: none;
   color: white;
   cursor: pointer;
 }
 .mat-mdc-slider{
-  --mdc-slider-disabled-handle-color: rgba(18, 128, 190, 1);
-  --mdc-slider-disabled-active-track-color: rgba(18, 128, 190, 1);
-  --mdc-slider-disabled-inactive-track-color: white;
+  --mdc-slider-disabled-handle-color: rgba(18, 128, 190, 1) !important;
+  --mdc-slider-disabled-active-track-color: rgba(18, 128, 190, 1) !important;
+  --mdc-slider-disabled-inactive-track-color: white !important;
 }

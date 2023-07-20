@@ -34,6 +34,9 @@
   border: solid 1px rgba(255, 255, 255, 0.793);
   margin: auto;
 }
+.product-lg .row{
+  flex-wrap: wrap;
+}
 .product {
   width: 45%;
   border-radius: 15px;
@@ -177,4 +180,28 @@ th,td, .tb-title{
 }
 th{
   color: rgba(197, 139, 242, 1);
+}
+
+@media (max-width: 576px) {
+  .product{
+    width: 75%;
+  }
+  .product .row{
+    flex-wrap: wrap;
+  }
+  .packimg{
+    width: 100%;
+  }
+  .product-lg{
+    width: 75%;
+  }
+  .product-lg .row img{
+    width: 100%;
+  }
+  .btn-lg{
+    width: 100%;
+  }
+  .conts{
+    overflow-x: auto;
+  }
 }
