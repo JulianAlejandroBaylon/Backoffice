@@ -156,3 +156,9 @@ body {
   --mdc-slider-disabled-active-track-color: rgba(18, 128, 190, 1) !important;
   --mdc-slider-disabled-inactive-track-color: white !important;
 }
+@media (max-width:576px) {
+  #cdk-overlay-0{
+    width: 35% !important;
+    left: 80.688px !important;
+  }
+}

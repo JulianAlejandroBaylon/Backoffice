@@ -16,7 +16,7 @@ h1 {
   margin: 5% 0% 0% 0%;
   min-height: 6vh;
   width: 80%;
-  font-size: 0.7vw;
+  font-size: 0.8rem;
 }
 .section:hover {
   background-color: rgba(63, 38, 127, 1);
@@ -95,6 +95,9 @@ mat-select {
   align-items: center;
   justify-content: center;
 }
+.logo h1 {
+  font-size: 1.5rem;
+}
 .get-mat {
   border-radius: 25px;
   background-color: rgba(63, 38, 127, 1);
@@ -133,11 +136,11 @@ mat-select {
   z-index: 1;
 }
 .get-mat-cont p {
-  font-size: 0.7vw;
+  font-size: 0.7rem;
   color: white;
 }
 .get-mat-cont button {
-  font-size: 1vw;
+  font-size: 1rem;
   color: rgba(63, 38, 127, 1);
   width: 80%;
   border-radius: 10px;
@@ -167,8 +170,8 @@ mat-select {
 .menu {
   min-width: 175px;
 }
-.circle{
-  width:2rem; /* Ajusta el tamaño del círculo */
+.circle {
+  width: 2rem; /* Ajusta el tamaño del círculo */
   height: 2rem;
   border-radius: 50%; /* Hace que el div sea un círculo */
   background-color: red; /* Cambia el color de fondo del círculo */
@@ -177,6 +180,32 @@ mat-select {
   justify-content: center;
 }
 
-@media (max-width:576px) {
+@media (max-width: 576px) {
+  .sidenav {
+    width: 50%;
+  }
+  .pagetitle {
+    display: none;
+  }
+  .idioma{
+    width: 25%;
+  }  
+  mat-form-field{
+    width: 50%;
+  }
+  .options{
+    width: 80%;
+  }
   
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .sidenav{
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sidenav{
+    width: 20%;
+  }
 }

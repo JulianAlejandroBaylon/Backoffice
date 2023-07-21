@@ -41,7 +41,7 @@
 }
 .circle {
   border-radius: 50%;
-  width: 35px;
+  min-width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,5 +155,25 @@ mat-slider {
   .promimg img {
     width: 80%;
     margin: 5%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .square{
+    flex-basis: 40%;
+    margin: 5%;
+  }
+  .oftext{
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .square{
+    flex-basis: 40%;
+    margin: 5%;
+  }
+  .oftext{
+    width: 85%;
   }
 }

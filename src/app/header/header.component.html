@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer class="sidenav" #drawer opened mode="side">
+  <mat-drawer class="sidenav" #drawer opened [mode]="navmode">
     <div class="logo">
       <img src="assets/images/logonav.png" alt="" />
       <h1 class="medium" style="color: white">Vrakka</h1>
@@ -74,7 +74,7 @@
         >
           <mat-icon>menu</mat-icon>
         </button>
-        <span>{{ pageTitle }}</span>
+        <span class="pagetitle">{{ pageTitle }}</span>
       </div>
       <div class="options">
         <img *ngIf="selected == 'USA'" src="assets/icons/USA.svg" alt="" />
