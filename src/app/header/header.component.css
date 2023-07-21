@@ -180,6 +180,7 @@ mat-select {
   justify-content: center;
 }
 
+/*Smartphones on vertical*/
 @media (max-width: 576px) {
   .sidenav {
     width: 50%;
@@ -198,14 +199,24 @@ mat-select {
   }
   
 }
-@media screen and (min-width: 577px) and (max-width: 767px) {
+/*Tablets and big smartphones*/
+@media screen and (min-width: 577px) and (max-width: 991px) {
   .sidenav{
     width: 25%;
   }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .sidenav{
-    width: 20%;
+  .pagetitle {
+    display: none;
+  }
+  .idioma{
+    width: 15%;
+  }  
+  mat-form-field{
+    width: 50%;
+  }
+  .options{
+    width: 60%;
+  }
+  .btnuser{
+    min-height: 11vh;
   }
 }
