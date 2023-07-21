@@ -1,3 +1,6 @@
+.container{
+  padding-top: 5%;
+}
 .cont-s {
   width: 100%;
   min-height: auto;
@@ -55,4 +58,10 @@
 }
 .example-spacer{
   flex: 1 1 auto;
+}
+
+@media (max-width:576px) {
+  .ttprod h2{
+    font-size: 1rem;
+  }
 }
