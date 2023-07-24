@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer class="sidenav" #drawer opened mode="side">
+  <mat-drawer class="sidenav" #drawer opened [mode]="navmode">
     <div class="logo">
       <img src="assets/images/logonav.png" alt="" />
       <h1 class="medium" style="color: white">Vrakka</h1>
@@ -64,7 +64,7 @@
   </mat-drawer>
   <mat-drawer-content>
     <mat-toolbar class="navbar">
-      <div class="title">        
+      <div class="title">
         <button
           mat-icon-button
           class="example-icon"
@@ -74,7 +74,7 @@
         >
           <mat-icon>menu</mat-icon>
         </button>
-        <span>{{ pageTitle }}</span>
+        <span class="pagetitle">{{ pageTitle }}</span>
       </div>
       <div class="options">
         <img *ngIf="selected == 'USA'" src="assets/icons/USA.svg" alt="" />
@@ -87,13 +87,23 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <button class="notify">
-          <img src="assets/icons/Bell.svg" alt="" />
+        <button class="notify" mat-button [matMenuTriggerFor]="menutwo"><img src="assets/icons/Bell.svg" alt="" /></button>
+        <mat-menu #menutwo="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+          <p routerLink="" style="cursor: pointer; text-decoration:underline; text-align: center; color: blueviolet;">show all</p>
+        </mat-menu>
+        <button class="btnuser" mat-button [matMenuTriggerFor]="menu">
+          <div class="circle">U.S</div>
+          <span>User</span> <img src="/assets/icons/Arrowdown.svg" alt="" />
         </button>
-        <button class="btnuser"mat-button [matMenuTriggerFor]="menu"><div class="circle">U.S</div><span>User</span> <img src="/assets/icons/Arrowdown.svg" alt=""></button>
-        <mat-menu  #menu="matMenu">
-          <button class="menu" mat-menu-item routerLink="/settings"> <img src="/assets/icons/Settings.svg" alt="">Settings</button>
-          <button class="menu" mat-menu-item><img src="/assets/icons/Logout.svg" alt="">Log out</button>
+        <mat-menu #menu="matMenu">
+          <button class="menu" mat-menu-item routerLink="/settings">
+            <img src="/assets/icons/Settings.svg" alt="" />Settings
+          </button>
+          <button class="menu" mat-menu-item>
+            <img src="/assets/icons/Logout.svg" alt="" />Log out
+          </button>
         </mat-menu>
       </div>
     </mat-toolbar>

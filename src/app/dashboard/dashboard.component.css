@@ -1,6 +1,9 @@
 .balance {
   color: white;
 }
+.balance .title{
+  flex-wrap: wrap;
+}
 .squares {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,7 +20,7 @@
   margin: auto;
   width: 60%;
   align-items: center;
-  font-size: 1vw;
+  font-size: 1rem;
   padding-top: 5%;
 }
 .h3sq span {
@@ -38,7 +41,7 @@
 }
 .circle {
   border-radius: 50%;
-  width: 35px;
+  min-width: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,16 +68,27 @@ mat-slider {
   width: 100%;
 }
 .goals {
+  color: white;
+  align-items: center;
 }
-
+.colortxt{
+  background: linear-gradient(to left, rgba(225, 23, 253, 1) 75%, rgba(13, 193, 229, 1) 83%, rgba(62, 109, 241, 1)93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.2rem;
+}
+.infocont{
+  width: 90%;
+}
 .offer {
   color: white;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .oftext {
   align-items: center;
   text-align: center;
-  width: 60%;
+  width: 55%;
   margin: auto;
   padding-bottom: 2.4%;
 }
@@ -106,7 +120,72 @@ mat-slider {
 }
 .mapping {
   width: 45%;
+  flex-wrap: wrap;
 }
 .sub {
   width: 45%;
+}
+.mg-0{
+  margin: 0;
+}
+
+.map-link {
+  width: 80%;
+  margin: 5%;
+}
+
+@media (max-width:576px) {
+  .balance .title h3,h2{
+    flex-basis: 80%;
+  }
+  .squares{
+    justify-content: center;
+  }
+  .square{
+    flex-basis: 80%;
+    margin: 5%;
+  }
+  .offer img{
+    margin: 10%;
+  }
+  .oftext{
+    flex-basis: 80%;
+  }
+  .offer .row{
+    flex-basis: 80%;
+  }
+  .promimg{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .promimg img {
+    width: 80%;
+    margin: 5%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .square{
+    flex-basis: 40%;
+    margin: 5%;
+  }
+  .oftext{
+    width: 85%;
+  }  
+  .offer img{
+    margin: auto auto 5% auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .square{
+    flex-basis: 40%;
+    margin: 5%;
+  }
+  .oftext{
+    width: 85%;
+  }  
+  .offer img{
+    margin: auto auto 5% auto;
+  }
 }

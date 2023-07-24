@@ -16,7 +16,7 @@
 }
 .btnexport{
   margin: auto 5% auto auto;
-  width: 10%;
+  width: 6.9rem;
   min-height: 6vh;
   border-radius: 10px;
   border: none;
@@ -43,4 +43,10 @@ td,
 }
 th {
   color: rgba(197, 139, 242, 1);
+}
+
+@media (max-width:576px) {
+  .conts{
+    overflow-x: auto;
+  }
 }

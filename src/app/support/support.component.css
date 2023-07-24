@@ -34,3 +34,17 @@
 textarea{
   resize: none;
 }
+
+@media (max-width:576px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+
+  }
+  .sendbtn{
+    float: none;
+    margin: auto;
+    width: 50%;
+  }
+}

@@ -1,0 +1,35 @@
+.example-ripple-container {
+  cursor: pointer;
+  text-align: center;
+  background-color: white;
+  width: 20%;
+  height: 150px;
+  border: solid 2px rgba(125, 103, 255, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(125, 103, 255, 1);
+  margin: 2%;
+}
+.white {
+  color: white;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .example-ripple-container {
+    flex-basis: 40%;
+  }
+  .wrap {
+    justify-content: center;
+  }
+}

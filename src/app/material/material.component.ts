@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-material',
@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./material.component.css']
 })
 export class MaterialComponent {
-
 }
