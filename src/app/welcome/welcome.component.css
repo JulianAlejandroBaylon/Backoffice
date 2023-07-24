@@ -59,10 +59,14 @@
   }
   .welcome-left img {
     margin: auto;
+    width: 40%;
   }
   .welcome-right{
     flex-basis: 100%;
     text-align: center;
+  }
+  .welcome button{
+    margin: 3%;
   }
 }
 /*Small tablets and smartphones on horizontal*/

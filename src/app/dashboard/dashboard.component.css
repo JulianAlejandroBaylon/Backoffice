@@ -120,12 +120,18 @@ mat-slider {
 }
 .mapping {
   width: 45%;
+  flex-wrap: wrap;
 }
 .sub {
   width: 45%;
 }
 .mg-0{
   margin: 0;
+}
+
+.map-link {
+  width: 80%;
+  margin: 5%;
 }
 
 @media (max-width:576px) {
@@ -165,6 +171,9 @@ mat-slider {
   }
   .oftext{
     width: 85%;
+  }  
+  .offer img{
+    margin: auto auto 5% auto;
   }
 }
 
@@ -175,5 +184,8 @@ mat-slider {
   }
   .oftext{
     width: 85%;
+  }  
+  .offer img{
+    margin: auto auto 5% auto;
   }
 }

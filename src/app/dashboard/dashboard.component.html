@@ -9,7 +9,7 @@
       <div class="square column">
         <h3 class="row thin h3sq">
           <span class="circle" style="background-color: rgba(248, 6, 255, 1)"
-            ><img src="/assets/icons/Sales.svg" alt=""></span
+            ><img src="/assets/icons/Sales.svg" alt="" /></span
           >Total Sales
         </h3>
         <h2 class="regular mg-5">$ VALOR USD</h2>
@@ -18,7 +18,7 @@
       <div class="square column">
         <h3 class="row thin h3sq">
           <span class="circle" style="background-color: rgba(252, 172, 80, 1)"
-            ><img src="/assets/icons/Comissions.svg" alt=""></span
+            ><img src="/assets/icons/Comissions.svg" alt="" /></span
           >Comissions
         </h3>
         <h2 class="regular mg-5">$ VALOR USD</h2>
@@ -27,7 +27,7 @@
       <div class="square column">
         <h3 class="row thin h3sq">
           <span class="circle" style="background-color: rgba(19, 207, 221, 1)"
-            ><img src="/assets/icons/Sold.svg" alt=""></span
+            ><img src="/assets/icons/Sold.svg" alt="" /></span
           >NFTs sold
         </h3>
         <h2 class="regular mg-5">$ VALOR USD</h2>
@@ -36,7 +36,7 @@
       <div class="square column">
         <h3 class="row thin h3sq">
           <span class="circle" style="background-color: rgba(140, 48, 245, 1)"
-            ><img src="/assets/icons/Customers.svg" alt=""></span
+            ><img src="/assets/icons/Customers.svg" alt="" /></span
           >New customers
         </h3>
         <h2 class="regular mg-5">$ VALOR USD</h2>
@@ -51,19 +51,29 @@
     <div class="infocont">
       <p class="regular">Complete the NFTs Sales Goal to earn the Reward</p>
       <div>
-        <p class="colortxt bold mg-0">Latest generation Iphone </p>
+        <p class="colortxt bold mg-0">Latest generation Iphone</p>
         <p class="regular mg-0">Up-to-date: 70</p>
         <mat-slider>
-          <input matSliderThumb [(ngModel)]="defaultValueIphone" [disabled]="true"#slider>
+          <input
+            matSliderThumb
+            [(ngModel)]="defaultValueIphone"
+            [disabled]="true"
+            #slider
+          />
         </mat-slider>
       </div>
       <div>
         <p class="colortxt bold mg-0">Trip to Dubai - Company Launch</p>
         <p class="regular mg-0">Up-to-date: 70</p>
         <mat-slider>
-          <input matSliderThumb [(ngModel)]="defaultValueLaunch" [disabled]="true"#slider>
+          <input
+            matSliderThumb
+            [(ngModel)]="defaultValueLaunch"
+            [disabled]="true"
+            #slider
+          />
         </mat-slider>
-      </div>      
+      </div>
     </div>
   </div>
   <div class="offer conts row">
@@ -75,7 +85,9 @@
         private rounds with amazing benefits. Act now and secure your spot
         before the closure date.
       </p>
-      <button class="btns medium" style="cursor: pointer;">Acquire Packages</button>
+      <button class="btns medium" style="cursor: pointer">
+        Acquire Packages
+      </button>
     </div>
     <div class="row">
       <img src="/assets/images/academy-large.png" alt="" />
@@ -89,6 +101,9 @@
       <img src="/assets/images/promo.png" alt="" />
     </div>
   </div>
-  <div class="mapping conts" style="background-color: aqua">x</div>
+  <div class="mapping conts row">
+    <div><h3 class="regular">Sales Mapping by Country</h3></div>
+    <div id="map" class="map-link"></div>
+  </div>
   <div class="sub conts" style="background-color: greenyellow">x</div>
 </div>

@@ -136,6 +136,25 @@ body {
   color: white;
   font-size: 1rem;
 }
+.part{
+  position: relative;
+  overflow: hidden;
+}
+.part::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 10%;
+  color: white;/* Color de fondo al pasar el mouse por encima */
+  transition: right 0.3s ease;
+  z-index: -1;
+}
+.part:hover::before {
+  right: 0;
+  background-color: white;
+}
 .ttprod {
   border-bottom: solid 1px white;
 }

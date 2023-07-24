@@ -27,7 +27,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import { MaterialComponent } from './material/material.component';
 import {MatRippleModule} from '@angular/material/core';
-
+import { LoginComponent } from './login/login.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -42,7 +43,8 @@ import {MatRippleModule} from '@angular/material/core';
     ComissionsComponent,
     SalesReportComponent,
     SettingsComponent,
-    MaterialComponent
+    MaterialComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,8 @@ import {MatRippleModule} from '@angular/material/core';
     MatRadioModule,
     MatInputModule,
     MatSliderModule,
-    FormsModule,MatRippleModule
+    FormsModule,MatRippleModule,
+    MatCardModule
   ],
   providers: [Title],
   bootstrap: [AppComponent],

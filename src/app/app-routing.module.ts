@@ -8,15 +8,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { SupportComponent } from './support/support.component';
 import { SettingsComponent } from './settings/settings.component';
 import { MaterialComponent } from './material/material.component';
+import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent,},
+  {path: 'login', component: LoginComponent},
   {path: 'welcome', component: WelcomeComponent},
   {path: 'products', component: ProductsComponent},
   {path: 'comissions', component: ComissionsComponent},
   {path: 'sales-report', component: SalesReportComponent},
   {path: 'support', component: SupportComponent},
   {path: 'settings', component: SettingsComponent},
-  {path: 'material', component: MaterialComponent},
+  {path: 'material', component: MaterialComponent}
+  
 ];
 
 @NgModule({

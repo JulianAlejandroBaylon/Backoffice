@@ -162,6 +162,7 @@
   background-size: 100% 100%;  
   border-radius: 10px 10px 0px 0px;
 }
+
 /*TABLE*/
 table{
   background-color: rgba(63, 38, 127, 1);
@@ -203,6 +204,9 @@ th{
   }
   .conts{
     overflow-x: auto;
+  }
+  .btn-prod{
+    margin: 0% 0% 10% 0%;
   }
 }
 
