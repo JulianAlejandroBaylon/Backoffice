@@ -10,15 +10,12 @@ import { ConexionService, Users } from '../services/conexion.service';
 export class ProductsComponent {
   constructor(private conexion: ConexionService){}
   selectedPart: string = 'part2';
-  user: Users[][] = [];
-
-
   displayedColumns: string[] = ['date', 'orderID', 'product', 'price','status'];
   dataSource = [
-   // {date: this.user[0][0], order: this.user[0][1], product: this.user[0][2], price: this.user[0][3], status: this.user[0][4]},
+    {date: "", order: "", product: "", price: "", status: ""},
   ];
 
-  data = new MatTableDataSource<any>(this.dataSource);
+  data: any
 
   changeContent(part: string) {
     this.selectedPart = part;
@@ -26,28 +23,33 @@ export class ProductsComponent {
 
   ngOnInit(){
     this.listaUsuarios()
-    console.log(this.user)
   }
 
   listaUsuarios() {
     this.conexion.getUsuarios().subscribe(
       (res: any) => {
-        for (const usuario of res) {
-          this.user = usuario.id;
-          this.user = usuario.nick;
-          this.user = usuario.name;
-          this.user = usuario.rol;
-          this.user = usuario.stat;
-          console.log(res)
+        // Crear un arreglo para almacenar los usuarios
+        const usuarios = [];
 
-          // Puedes realizar las acciones deseadas con los datos aquí
+        for (const usuario of res) {
+
+          // Agregar el usuario al arreglo de usuarios
+          usuarios.push({ date: usuario.id, order: usuario.nick, product: usuario.name, price: usuario.rol, status: usuario.stat });
         }
+
+        // Asignar el arreglo completo de usuarios a this.dataSource
+        this.dataSource = usuarios;
+
+        // Crear la instancia de MatTableDataSource con el arreglo de usuarios
+        this.data = new MatTableDataSource<any>(this.dataSource);
+
       },
       (err: any) => {
         console.log(err);
       }
     );
   }
+
 
 
 }
