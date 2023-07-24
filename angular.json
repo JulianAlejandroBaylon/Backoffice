@@ -22,9 +22,10 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/scripts"
             ],
-            "styles": [              
+            "styles": [
               "src/styles.css",
               "@angular/material/prebuilt-themes/indigo-pink.css"
             ],
@@ -61,7 +62,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "backoffice:build:production"
+              "browserTarget": "backoffice:build:production",
+              "proxyConfig": "proxy.conf.json"
             },
             "development": {
               "browserTarget": "backoffice:build:development"
@@ -87,7 +89,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
+            "styles": [
               "src/styles.css",
               "@angular/material/prebuilt-themes/indigo-pink.css"
             ],

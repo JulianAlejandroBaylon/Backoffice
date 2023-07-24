@@ -10,6 +10,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { MaterialComponent } from './material/material.component';
 import { LoginComponent } from './login/login.component';
 const routes: Routes = [
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent,},
   {path: 'login', component: LoginComponent},
   {path: 'welcome', component: WelcomeComponent},

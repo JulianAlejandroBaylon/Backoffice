@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,4 +11,17 @@ export class DashboardComponent {
 
   defaultValueIphone: number = 40;
   defaultValueLaunch: number = 30;
+
+  constructor(private renderer: Renderer2) { }
+
+  ngOnInit() {
+    this.loadScript('/assets/scripts/mapdata.js'); // Ruta del script que quieres cargar
+    this.loadScript('/assets/scripts/worldmap.js');
+  }
+
+  loadScript(url: string) {
+    const script = this.renderer.createElement('script');
+    script.src = url;
+    this.renderer.appendChild(document.body, script);
+  }
 }
