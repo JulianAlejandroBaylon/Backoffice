@@ -1,0 +1,100 @@
+{
+  "Nav": {
+    "Dash": "Panel",
+    "Prod": "Productos",
+    "Com": "Comisiones",
+    "RepSale": "Reporte de ventas",
+    "Sup": "Soporte",
+    "Access1": "Obten acceso a toda la información que necesites compartir.",
+    "Access2": "Obten el Material",
+    "Conf1":" Ajustes",
+    "Conf2":"Cerrar sesion"
+  },
+  "Welcome": {
+    "Wel1": "Hola ",
+    "Wel2": "Gane más del 10% con...",
+    "Wel3": "Enlace de referencia",
+    "Wel4": "Copiar enlace"
+  },
+  "Dashboard": {
+    "Dash1": "Saldo semanal ",
+    "Dash2": " Resumen de ventas",
+    "Dash3": "Ventas totales",
+    "Dash4": "Comisiones",
+    "Dash5": "NFTs Vendidos",
+    "Dash6": "Nuevos clientes",
+    "Dash7": "desde la semana pasada",
+    "Dash8": "Objetivos y recompensas",
+    "Dash9": "Complete el objetivo de ventas de NFT para ganar la recompensa",
+    "Dash10": "Iphone de última generación",
+    "Dash11": "Viaje a Dubai - Lanzamiento de la empresa",
+    "Dash12": "Paquetes exclusivos con precios limitados",
+    "Dash13": "¡No te pierdas esta oportunidad por tiempo limitado! Al comprar más paquetes de nuestros productos excepcionales, usted obtiene acceso a exclusivos Rondas privadas con increíbles beneficios. Actúa ahora y asegura tu lugar antes de la fecha de cierre.",
+    "Dash14": "Adquirir Paquetes",
+    "Dash15": "Promociones activas",
+    "Dash16": "Mapeo de Ventas por País",
+    "Dash17": "Suscripcion"
+  },
+  "Product": {
+    "Prod1": "Comprar productos",
+    "Prod2": "Mis productos",
+    "Prod3": "¿Quieres hacer una compra por ti mismo?",
+    "Prod4": "Aprovecha nuestro paquete exclusivo ahora mismo y obtenga múltiples beneficios que llevarán tu experiencia al siguiente nivel - no te pierdas la oportunidad de disfrutar de una oferta única!",
+    "Prod5": "Seleccione el paquete que desea adquirir",
+    "Prod6": "Acceso a ",
+    "Prod7": "modulos",
+    "Prod8": "Ahorrando ",
+    "Prod9": "Consiguelo ahora",
+    "Prod10": "módulos y curso de trading",
+    "Prod11": "Agregar al carrito",
+    "Prod12": "En esta sección se muestran los productos con el fin de mantener una registro preciso de las transacciones realizadas. Sin embargo, los bienes digitales en sí mismos, como NFT y tokens, no se entregan directamente a través de nuestra plataforma, se envían directamente a la dirección facilitada de su billetera Metamask. Es crucial asegurarse de que esto sea correcto y verificado antes de proceder con el envío de digital bienes.",
+    "Prod13": "Acceso a todos los modulos",
+    "Prod14": "Abrir academy",
+    "Prod15": "La compra minima",
+    "Prod16": "son 100 fichas",
+    "Prod17": "Historial de compras",
+    "Prod18": "Fecha de compra",
+    "Prod19": "ID de orden",
+    "Prod20": "Producto",
+    "Prod21": "Precio",
+    "Prod22": "Estado"
+  },
+  "Comissions": {
+    "Com1": "Balance total",
+    "Com2": "Comisiones + Bonos",
+    "Com3": "Cartera en la que estás recibiendo tus comisiones: ",
+    "Com4": "Cambia los detalles de pago en la sección 'configuración'",
+    "Com5": "Detalles de las comisiones",
+    "Com6": "Exportar",
+    "Com7": "Semana",
+    "Com8": "Cantidad",
+    "Com9": "Descripcion",
+    "Com10": "Detalles",
+    "Com11": "Ver"
+  },
+  "RepSales":{
+    "Rep1":"Ventas Totales",
+    "Rep2":"Detalles del cliente"
+  },
+  "Support":{
+    "Sup1":"Solicitar asistencia",
+    "Sup2":"Seleccione Asunto",
+    "Sup3":"Mensaje",
+    "Sup4":"Escribe tu mensaje...",
+    "Sup5":"Enviar mensaje"
+  },
+  "Settings":{
+    "Set1":"Cuenta",
+    "Set2":"Billeteras",
+    "Set3":"Información Personal",
+    "Set4":"Nombre",
+    "Set5":"Nombre de usuario",
+    "Set6":"Correo electronico",
+    "Set7":"Pais",
+    "Set8":"Fecha de nacimiento",
+    "Set9":"Modo obscuro",
+    "Set10":"Ingrese a su billetera para pagos",
+    "Set11":"Guardar",
+    "Set12":"Ingresa a tu billetera de Metamask para enviarte tus productos digitales"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "Nav": {
+    "Dash": "Dashboard",
+    "Prod": "Products",
+    "Com": "Comissions",
+    "RepSale": "Sales Report",
+    "Sup": "Support",
+    "Access1": "Get access to all information you need to share.",
+    "Access2": "Get Material",
+    "Conf1":" Settings",
+    "Conf2":"Log out"
+  },
+  "Welcome": {
+    "Wel1": "Hi ",
+    "Wel2": "Earn Over 10% with...",
+    "Wel3": "Referal Link",
+    "Wel4": "Copy Link"
+  },
+  "Dashboard": {
+    "Dash1": "Weekly balance ",
+    "Dash2": " Sales Summery",
+    "Dash3": "Total Sales",
+    "Dash4": "Comissions",
+    "Dash5": "NFTs sold",
+    "Dash6": "New customers",
+    "Dash7": " from last week",
+    "Dash8": "Goals & Rewards",
+    "Dash9": "Complete the NFTs Sales Goal to earn the Reward",
+    "Dash10": "Latest generation Iphone",
+    "Dash11": "Trip to Dubai - Company Launch",
+    "Dash12": "Exclusive packages with limited prices",
+    "Dash13": "Don't miss out on this limited-time opportunity! By purchasing more packages of our exceptional products, you gain access to exclusive private rounds with amazing benefits. Act now and secure your spot before the closure date.",
+    "Dash14": "Acquire Packages",
+    "Dash15": "Active promos",
+    "Dash16": "Sales Mapping by Country",
+    "Dash17": "Suscription"
+  },
+  "Product": {
+    "Prod1": "Purchase products",
+    "Prod2": " My products",
+    "Prod3": "Want to make a purchase for yourself?",
+    "Prod4": "Take advantage of our exclusive package right now and get multiple benefits that will take your experience to the next level - don't miss the opportunity to enjoy a unique offer!",
+    "Prod5": "Select the package you want to acquire",
+    "Prod6": "Access to ",
+    "Prod7": "modules",
+    "Prod8": "Saving ",
+    "Prod9": "Get it now",
+    "Prod10": "modules and trading course",
+    "Prod11": "Add to cart",
+    "Prod12": "In this section products are displayed for the purpose of keeping an accurate record of transactions made. However, the digital goods themselves, such as NFTs and tokens, are not delivered directly through our platform, they are sent directly to the address provided from your Metamask wallet. It is crucial to ensure that this is correct and verified before proceeding with the shipment of digital goods.",
+    "Prod13": "Access to all modules",
+    "Prod14": "Open Academy",
+    "Prod15": "The minimum purchase",
+    "Prod16": "is 100 tokens",
+    "Prod17": "Purchase history",
+    "Prod18": "Purchase date",
+    "Prod19": "OrderID",
+    "Prod20": "Product",
+    "Prod21": "Price",
+    "Prod22": "Status"
+  },
+  "Comissions": {
+    "Com1": "Total Balance",
+    "Com2": "Comisions + Bonuses",
+    "Com3": "Wallet on which you are receiving your commissions: ",
+    "Com4": "Change the payment details in the 'settings' section",
+    "Com5": "Comisions Details",
+    "Com6": "Export",
+    "Com7": "Week",
+    "Com8": "Amount",
+    "Com9": "Description",
+    "Com10": "Details",
+    "Com11": "View"
+  },
+  "RepSales": {
+    "Rep1": "Total Sales",
+    "Rep2": "Customer Details"
+  },
+  "Support": {
+    "Sup1": "Request assistance",
+    "Sup2": "Select Subject",
+    "Sup3": "Message",
+    "Sup4": "Write your message...",
+    "Sup5": "Send Message"
+  },
+  "Settings": {
+    "Set1": "Account",
+    "Set2": "Wallets",
+    "Set3": "Personal data",
+    "Set4": "Name",
+    "Set5": "Username",
+    "Set6": "Email",
+    "Set7": "Country",
+    "Set8": "Date of birth",
+    "Set9": "Dark mode",
+    "Set10": "Enter your wallet for payments",
+    "Set11": "Save",
+    "Set12": "Enter your Metamask wallet to send you your digital products"
+  }
+}

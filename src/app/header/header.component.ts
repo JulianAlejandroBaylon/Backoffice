@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatDrawer, MatDrawerMode } from '@angular/material/sidenav';
-
+import { TranslateService } from '@ngx-translate/core';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { MatDrawer, MatDrawerMode } from '@angular/material/sidenav';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
-  selected = 'USA';
+  selected= 'USA';
   isSelected: boolean = false;
 
   toggleSelected() {
@@ -23,8 +23,9 @@ export class HeaderComponent {
   }
   navmode: MatDrawerMode = 'side'; 
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private translateService: TranslateService) {
     this.updateNavMode(); // Llamamos a la función inicialmente para establecer el valor inicial de navmode
+    this.translateService.setDefaultLang('en');
   }
 
   @HostListener('window:resize')
@@ -37,6 +38,13 @@ export class HeaderComponent {
       this.navmode = 'over';
     } else {
       this.navmode = 'side';
+    }
+  }
+  onSelectChange(event: any) {
+    if(this.selected== "USA"){
+      this.translateService.use('en');
+    }else{
+      this.translateService.use('es');
     }
   }
 }

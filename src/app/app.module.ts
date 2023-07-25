@@ -31,7 +31,13 @@ import {MatRippleModule} from '@angular/material/core';
 import { LoginComponent } from './login/login.component';
 import {MatCardModule} from '@angular/material/card';
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { HttpClient } from '@angular/common/http';
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -66,7 +72,14 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     MatSliderModule,
     FormsModule,MatRippleModule,
-    MatCardModule
+    MatCardModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
   ],
   providers: [Title],
   bootstrap: [AppComponent],

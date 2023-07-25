@@ -11,7 +11,7 @@
         (click)="section('Dashboard')"
         routerLink="/dashboard"
       >
-        <img src="assets/icons/Chartcircle.svg" alt="" />Dashboard
+        <img src="assets/icons/Chartcircle.svg" alt="" />{{ "Nav.Dash" | translate }}
       </div>
       <div
         class="section regular row"
@@ -19,7 +19,7 @@
         (click)="section('Products')"
         routerLink="/products"
       >
-        <img src="assets/icons/Product.svg" alt="" />Products
+        <img src="assets/icons/Product.svg" alt="" />{{ "Nav.Prod" | translate }}
       </div>
       <div
         class="section regular row"
@@ -27,7 +27,7 @@
         (click)="section('Comissions')"
         routerLink="/comissions"
       >
-        <img src="assets/icons/Shop.svg" alt="" />Comissions
+        <img src="assets/icons/Shop.svg" alt="" /> {{ "Nav.Com" | translate }}
       </div>
       <div
         class="section regular row"
@@ -35,7 +35,7 @@
         (click)="section('Sales Report')"
         routerLink="/sales-report"
       >
-        <img src="assets/icons/Chart_line.svg" alt="" />Sales Report
+        <img src="assets/icons/Chart_line.svg" alt="" /> {{ "Nav.RepSale" | translate }}
       </div>
       <div
         class="section regular row"
@@ -43,7 +43,7 @@
         (click)="section('Support')"
         routerLink="/support"
       >
-        <img src="assets/icons/Support.svg" alt="" />Support
+        <img src="assets/icons/Support.svg" alt="" />{{ "Nav.Sup" | translate }}
       </div>
       <div class="section regular row disabled">
         <img src="assets/icons/Close.svg" alt="" />Businesses
@@ -57,8 +57,8 @@
         <div class="circle top-right"></div>
         <div class="circle bottom-left"></div>
         <img src="/assets/images/logonav2.png" alt="" />
-        <p>Get access to all information you need to share.</p>
-        <button class="bold" routerLink="/material">Get Material</button>
+        <p>{{ "Nav.Access1" | translate }}</p>
+        <button class="bold" routerLink="/material"> {{ "Nav.Access2" | translate }}</button>
       </div>
     </div>
   </mat-drawer>
@@ -81,7 +81,7 @@
         <img *ngIf="selected == 'MX'" src="assets/icons/MX.svg" alt="" />
         <div class="idioma">
           <mat-form-field>
-            <mat-select [(value)]="selected">
+            <mat-select [(value)]="selected" (selectionChange)="onSelectChange($event)">
               <mat-option value="USA">Eng (US)</mat-option>
               <mat-option value="MX">Esp (MX)</mat-option>
             </mat-select>
@@ -99,10 +99,10 @@
         </button>
         <mat-menu #menu="matMenu">
           <button class="menu" mat-menu-item routerLink="/settings">
-            <img src="/assets/icons/Settings.svg" alt="" />Settings
+            <img src="/assets/icons/Settings.svg" alt="" />{{ "Nav.Conf1" | translate }}
           </button>
           <button class="menu" mat-menu-item>
-            <img src="/assets/icons/Logout.svg" alt="" />Log out
+            <img src="/assets/icons/Logout.svg" alt="" />{{ "Nav.Conf2" | translate }}
           </button>
         </mat-menu>
       </div>

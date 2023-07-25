@@ -1,21 +1,21 @@
 <div class="container">
   <div class="buttons">
     <button class="part medium" (click)="changeContent('part1')">
-      Account
+      {{"Settings.Set1" | translate}}
     </button>
     <button class="part medium" (click)="changeContent('part2')">
-      Wallets
+      {{"Settings.Set2" | translate}}
     </button>
   </div>
 
   <div class="cont-s" *ngIf="selectedPart === 'part1'">
     <div class="conts">
       <div class="ttprod medium">
-        <h2>Personal data</h2>
+        <h2>{{"Settings.Set3" | translate}}</h2>
       </div>
       <div class="inpts">
         <div class="column">
-          <h3 class="thin">Name</h3>
+          <h3 class="thin">{{"Settings.Set4" | translate}}</h3>
           <input
             class="r-input regular"
             type="text"
@@ -24,7 +24,7 @@
           />
         </div>
         <div class="column">
-          <h3 class="thin">Username</h3>
+          <h3 class="thin">{{"Settings.Set5" | translate}}</h3>
           <input
             class="r-input regular"
             type="text"
@@ -33,7 +33,7 @@
           />
         </div>
         <div class="column">
-          <h3 class="thin">Email</h3>
+          <h3 class="thin">{{"Settings.Set6" | translate}}</h3>
           <input
             class="r-input regular"
             type="text"
@@ -42,7 +42,7 @@
           />
         </div>
         <div class="column">
-          <h3 class="thin">Country</h3>
+          <h3 class="thin">{{"Settings.Set7" | translate}}</h3>
           <input
             class="r-input regular"
             type="text"
@@ -60,7 +60,7 @@
           />
         </div>
         <div class="column">
-          <h3 class="thin">Date of birth</h3>
+          <h3 class="thin">{{"Settings.Set8" | translate}}</h3>
           <input
             class="r-input regular mg-5"
             type="text"
@@ -92,17 +92,17 @@
               type="password"
             />
           </div>
-          <button class="btnpurple savebtn">Save</button>
+          <button class="btnpurple savebtn">{{"Settings.Set11" | translate}}</button>
         </div>
       </div>
     </div>
-    <mat-slide-toggle>Dark mode</mat-slide-toggle>
+    <mat-slide-toggle>{{"Settings.Set9" | translate}}</mat-slide-toggle>
     <span class="example-spacer"></span>
   </div>
   <div class="cont-s" *ngIf="selectedPart === 'part2'">
     <div class="conts">
       <div class="ttprod medium">
-        <h2>Enter your wallet for payments</h2>
+        <h2>{{"Settings.Set10" | translate}}</h2>
       </div>
       <div class="relative row">
         <div class="p-input r-input regular row">
@@ -113,12 +113,12 @@
             type="number"
           />
         </div>
-        <button class="btnpurple savebtn">Save</button>
+        <button class="btnpurple savebtn">{{"Settings.Set11" | translate}}</button>
       </div>
     </div>
     <div class="conts">
       <div class="ttprod medium">
-        <h2>Enter your Metamask wallet to send you your digital products</h2>
+        <h2>{{"Settings.Set12" | translate}}</h2>
       </div>
       <div class="relative row">
         <div class="p-input r-input regular row">
@@ -129,7 +129,7 @@
             type="number"
           />
         </div>
-        <button class="btnpurple savebtn">Save</button>
+        <button class="btnpurple savebtn">{{"Settings.Set11" | translate}}</button>
       </div>
     </div>
   </div>

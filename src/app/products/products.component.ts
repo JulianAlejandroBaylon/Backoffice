@@ -9,7 +9,7 @@ import { ConexionService, Users } from '../services/conexion.service';
 })
 export class ProductsComponent {
   constructor(private conexion: ConexionService){}
-  selectedPart: string = 'part2';
+  selectedPart: string = 'part1';
   displayedColumns: string[] = ['date', 'orderID', 'product', 'price','status'];
   dataSource = [
     {date: "", order: "", product: "", price: "", status: ""},
