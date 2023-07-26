@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatDrawer, MatDrawerMode } from '@angular/material/sidenav';
 import { TranslateService } from '@ngx-translate/core';
 
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-header',
@@ -23,7 +24,7 @@ export class HeaderComponent {
   }
   navmode: MatDrawerMode = 'side'; 
 
-  constructor(private breakpointObserver: BreakpointObserver, private translateService: TranslateService) {
+  constructor(private breakpointObserver: BreakpointObserver, private translateService: TranslateService, public colorToggleService: ColorToggleService) {
     this.updateNavMode(); // Llamamos a la función inicialmente para establecer el valor inicial de navmode
     this.translateService.setDefaultLang('en');
   }
@@ -46,5 +47,8 @@ export class HeaderComponent {
     }else{
       this.translateService.use('es');
     }
+  }
+  toggleColors() {
+    this.colorToggleService.toggleColors();
   }
 }

@@ -84,13 +84,14 @@ mat-slider {
   color: white;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: rgba(63, 38, 127, 1);
 }
 .oftext {
   align-items: center;
   text-align: center;
   width: 55%;
   margin: auto;
-  padding-bottom: 2.4%;
+  padding-bottom: 2.4%;  
 }
 .offer button {
   width: 50%;
@@ -140,6 +141,7 @@ mat-slider {
 .container{
   padding-bottom: 5%;
 }
+
 @media (max-width:576px) {
   .balance .title h3,h2{
     flex-basis: 80%;

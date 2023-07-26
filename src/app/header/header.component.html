@@ -104,11 +104,13 @@
           <button class="menu" mat-menu-item>
             <img src="/assets/icons/Logout.svg" alt="" />{{ "Nav.Conf2" | translate }}
           </button>
+          
+    <mat-slide-toggle (change)="toggleColors()">{{"Settings.Set9" | translate}}</mat-slide-toggle>
         </mat-menu>
       </div>
     </mat-toolbar>
   </mat-drawer-content>
-  <mat-drawer-content class="body">
+  <mat-drawer-content class="body"  [ngClass]="colorToggleService.isColorsOn ? 'colors-on' : 'colors-off'">
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

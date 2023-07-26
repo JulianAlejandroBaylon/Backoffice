@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-welcome',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
-
+  constructor(public colorToggleService: ColorToggleService) { }
 }

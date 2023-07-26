@@ -1,4 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,7 +13,7 @@ export class DashboardComponent {
   defaultValueIphone: number = 40;
   defaultValueLaunch: number = 30;
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2, public colorToggleService: ColorToggleService) { }
 
   ngOnInit() {
     this.loadScript('/assets/scripts/mapdata.js'); // Ruta del script que quieres cargar

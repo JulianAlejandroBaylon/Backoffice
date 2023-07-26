@@ -175,6 +175,45 @@ body {
   --mdc-slider-disabled-active-track-color: rgba(18, 128, 190, 1) !important;
   --mdc-slider-disabled-inactive-track-color: white !important;
 }
+
+
+/* Estilos cuando los colores están encendidos */
+.conts-on {
+  background-color: rgba(63, 38, 127, 1);
+}
+
+.conts-off {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.conts-off .ttc{
+  color: black;
+}
+
+.goal-on{
+  background-color: rgba(63, 38, 127, 1);
+}
+
+.goal-off {
+  background: rgba(230, 226, 255, 1);
+}
+.goal-off .ttc{
+  color: black;
+}
+
+
+
+.grad-on{  
+  background: local;
+}
+
+.grad-off {
+  background: linear-gradient(to right, rgba(18, 128, 190, 1),rgba(99, 25, 169, 1)) !important;
+}
+.grad-off .ttc{
+  color: black;
+}
 @media (max-width:576px) {
   #cdk-overlay-0{
     width: 35% !important;

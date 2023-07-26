@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ColorToggleService } from '../services/color-toggle.service';
 @Component({
   selector: 'app-settings',
   templateUrl: './settings.component.html',
@@ -9,4 +10,11 @@ export class SettingsComponent {
   changeContent(part: string) {
     this.selectedPart = part;
   }
+
+  constructor(public colorToggleService: ColorToggleService) {} 
+  
+  toggleColors() {
+    this.colorToggleService.toggleColors();
+  }
+ 
 }

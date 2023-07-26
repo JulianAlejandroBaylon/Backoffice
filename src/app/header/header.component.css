@@ -49,8 +49,11 @@ mat-icon {
   justify-content: space-between;
   align-items: center;
 }
-
 .body {
+  min-height: 100vh;
+}
+/* Estilos cuando los colores están encendidos */
+.colors-on {
   background: var(
     --web-gradient,
     linear-gradient(
@@ -59,7 +62,18 @@ mat-icon {
       rgba(63, 38, 127, 1) 100%
     )
   );
-  min-height: 100vh;
+}
+
+/* Estilos cuando los colores están apagados (colores predeterminados) */
+.colors-off {
+  background: var(
+    --web-gradient,
+    linear-gradient(
+      270deg,
+      rgba(146, 163, 253, 0.5),
+      rgba(219, 197, 253, 0.5)
+    )
+  );
 }
 
 .title {
