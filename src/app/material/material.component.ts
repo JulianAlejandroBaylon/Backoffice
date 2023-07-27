@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-material',
@@ -6,4 +7,5 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./material.component.css']
 })
 export class MaterialComponent {
+  constructor(public colorToggleService: ColorToggleService) { }
 }

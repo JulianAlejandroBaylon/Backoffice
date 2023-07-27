@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {MatRadioModule} from '@angular/material/radio';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-support',
@@ -7,5 +8,5 @@ import {MatRadioModule} from '@angular/material/radio';
   styleUrls: ['./support.component.css']
 })
 export class SupportComponent {
-
+  constructor(public colorToggleService: ColorToggleService) { }
 }

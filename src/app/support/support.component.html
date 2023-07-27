@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="regular" style="color: white;">{{ "Support.Sup1" | translate }}</h2>
+  <h2 class="regular" [ngClass]="colorToggleService.isColorsOn ? 'color-off' : 'color-on'">{{ "Support.Sup1" | translate }}</h2>
   <div class="wbox column">
     <div class="content">
       <div>

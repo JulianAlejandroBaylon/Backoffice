@@ -1,9 +1,9 @@
 <div class="container" >
-  <div class="buttons">
-    <button class="part medium" (click)="changeContent('part1')">
+  <div class="buttons" [ngClass]="colorToggleService.isColorsOn ? 'conts-off' : 'conts-on'">
+    <button class="part medium ttc" (click)="changeContent('part1')">
       {{"Settings.Set1" | translate}}
     </button>
-    <button class="part medium" (click)="changeContent('part2')">
+    <button class="part medium ttc" (click)="changeContent('part2')">
       {{"Settings.Set2" | translate}}
     </button>
   </div>

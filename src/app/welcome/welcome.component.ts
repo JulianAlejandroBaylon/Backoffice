@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ColorToggleService } from '../services/color-toggle.service';
+import { Clipboard } from '@angular/cdk/clipboard';
 
 @Component({
   selector: 'app-welcome',
@@ -7,5 +8,9 @@ import { ColorToggleService } from '../services/color-toggle.service';
   styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent {
-  constructor(public colorToggleService: ColorToggleService) { }
+  constructor(public colorToggleService: ColorToggleService,private clipboard: Clipboard) { }
+  copyLinkToClipboard(link: string): void {
+    this.clipboard.copy(link);
+  }
+  
 }
