@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+
+import { ColorToggleService } from '../services/color-toggle.service';
 @Component({
   selector: 'app-comissions',
   templateUrl: './comissions.component.html',
@@ -29,6 +31,6 @@ export class ComissionsComponent {
     { date: 9, amount: 'Fluorine', desc: 18.9984, details: 'F' },
     { date: 10, amount: 'Neon', desc: 20.1797, details: 'Ne' },
   ];
-
+  constructor(public colorToggleService: ColorToggleService) { }
   data = new MatTableDataSource<any>(this.dataSource);
 }

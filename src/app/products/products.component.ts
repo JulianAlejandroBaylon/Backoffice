@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { ConexionService, Users } from '../services/conexion.service';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-products',
@@ -8,13 +9,12 @@ import { ConexionService, Users } from '../services/conexion.service';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent {
-  constructor(private conexion: ConexionService){}
+  constructor(private conexion: ConexionService, public colorToggleService: ColorToggleService){}
   selectedPart: string = 'part1';
   displayedColumns: string[] = ['date', 'orderID', 'product', 'price','status'];
   dataSource = [
     {date: "", order: "", product: "", price: "", status: ""},
   ];
-
   data: any
 
   changeContent(part: string) {

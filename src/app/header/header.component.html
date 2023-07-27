@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer class="sidenav" #drawer opened [mode]="navmode">
+  <mat-drawer class="sidenav" #drawer opened [mode]="navmode"  [ngClass]="colorToggleService.isColorsOn ? 'side-off' : 'side-on'">
     <div class="logo">
       <img src="assets/images/logonav.png" alt="" />
       <h1 class="medium" style="color: white">Vrakka</h1>
@@ -63,7 +63,7 @@
     </div>
   </mat-drawer>
   <mat-drawer-content>
-    <mat-toolbar class="navbar">
+    <mat-toolbar class="navbar" [ngClass]="colorToggleService.isColorsOn ? 'side-off' : 'side-on'">
       <div class="title">
         <button
           mat-icon-button
@@ -81,7 +81,7 @@
         <img *ngIf="selected == 'MX'" src="assets/icons/MX.svg" alt="" />
         <div class="idioma">
           <mat-form-field>
-            <mat-select [(value)]="selected" (selectionChange)="onSelectChange($event)">
+            <mat-select class="ttc" [(value)]="selected" (selectionChange)="onSelectChange($event)">
               <mat-option value="USA">Eng (US)</mat-option>
               <mat-option value="MX">Esp (MX)</mat-option>
             </mat-select>
@@ -103,14 +103,13 @@
           </button>
           <button class="menu" mat-menu-item>
             <img src="/assets/icons/Logout.svg" alt="" />{{ "Nav.Conf2" | translate }}
-          </button>
-          
-    <mat-slide-toggle (change)="toggleColors()">{{"Settings.Set9" | translate}}</mat-slide-toggle>
+          </button>          
+          <mat-slide-toggle class="white" (change)="toggleColors()"><p class="white">{{"Settings.Set9" | translate}}</p> </mat-slide-toggle>
         </mat-menu>
       </div>
     </mat-toolbar>
   </mat-drawer-content>
-  <mat-drawer-content class="body"  [ngClass]="colorToggleService.isColorsOn ? 'colors-on' : 'colors-off'">
+  <mat-drawer-content class="body"  [ngClass]="colorToggleService.isColorsOn ? 'colors-off' : 'colors-on'">
     <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

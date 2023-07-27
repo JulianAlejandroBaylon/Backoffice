@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { ColorToggleService } from '../services/color-toggle.service';
 
 @Component({
   selector: 'app-sales-report',
@@ -36,4 +37,5 @@ export class SalesReportComponent {
   ];
 
   data = new MatTableDataSource<any>(this.dataSource);
+  constructor(public colorToggleService: ColorToggleService) { }
 }

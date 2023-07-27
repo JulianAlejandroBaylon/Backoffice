@@ -170,6 +170,16 @@ mat-slider {
     width: 80%;
     margin: 5%;
   }
+  .salestitle{
+    width: 100%;
+    text-align: center;
+  }
+  .mapping{
+    width: 100%;
+  }
+  .sub{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 767px) {

@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="conts white">
+  <div class="conts white" [ngClass]="colorToggleService.isColorsOn ? 'grad-off' : 'grad-on'">
     <div class="row top-bal">
       <div class="left">
         <h3 class="regular mg-bot-0">{{ "Comissions.Com1" | translate }}</h3>
-        <p class="thin purp mg-top-0">{{ "Comissions.Com2" | translate }}</p>
+        <p class="thin purp mg-top-0 ttc">{{ "Comissions.Com2" | translate }}</p>
       </div>
       <h2 class="medium left">VARIABLE <span>USD</span></h2>
     </div>

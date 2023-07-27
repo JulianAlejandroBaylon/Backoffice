@@ -117,6 +117,8 @@ body {
     rgba(23, 35, 91, 1),
     rgba(34, 22, 88, 1)
   );
+  min-height: 150px;
+  min-width: 150px;
 }
 .mdc-text-field--filled:not(.mdc-text-field--disabled){
   background-color: none;
@@ -176,10 +178,17 @@ body {
   --mdc-slider-disabled-inactive-track-color: white !important;
 }
 
+.side-on{
+  background: local;  
+}
+
+.side-off{
+  background-color: rgb(150, 129, 203)!important;
+}
 
 /* Estilos cuando los colores están encendidos */
 .conts-on {
-  background-color: rgba(63, 38, 127, 1);
+  background-color: local;
 }
 
 .conts-off {
@@ -192,7 +201,7 @@ body {
 }
 
 .goal-on{
-  background-color: rgba(63, 38, 127, 1);
+  background-color: local;
 }
 
 .goal-off {
@@ -212,7 +221,7 @@ body {
   background: linear-gradient(to right, rgba(18, 128, 190, 1),rgba(99, 25, 169, 1)) !important;
 }
 .grad-off .ttc{
-  color: black;
+  color: black !important;
 }
 @media (max-width:576px) {
   #cdk-overlay-0{
