@@ -236,4 +236,11 @@ body {
     width: 35% !important;
     left: 80.688px !important;
   }
+  .cdk-overlay-pane{
+    width: 100px !important;
+  }
+  .mat-mdc-menu-panel.mat-mdc-menu-panel{
+    min-width: 144px !important;
+    overflow: hidden !important;
+  }
 }
