@@ -226,12 +226,12 @@ mat-select {
   }
   .idioma{
     width: 15%;
-  }  
+  }   
   mat-form-field{
-    width: 50%;
+    width: 100%;
   }
   .options{
-    width: 60%;
+    width: 80%;
   }
   .btnuser{
     min-height: 11vh;

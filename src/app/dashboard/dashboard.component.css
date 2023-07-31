@@ -137,6 +137,8 @@ mat-slider {
 .map-link {
   width: 65%;
   margin: 5% 0% 5% 0%;
+  display: flex;
+  justify-content: center;
 }
 .container{
   padding-bottom: 5%;
@@ -177,6 +179,9 @@ mat-slider {
   .mapping{
     width: 100%;
   }
+  .map-link {
+    width: 100%;
+  }
   .sub{
     width: 100%;
   }
@@ -193,6 +198,16 @@ mat-slider {
   .offer img{
     margin: auto auto 5% auto;
   }
+  .map-link {
+    width: 100%;
+  }
+  .mapping{
+    width: 100%;
+  }
+  .salestitle{
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -205,5 +220,15 @@ mat-slider {
   }  
   .offer img{
     margin: auto auto 5% auto;
+  }
+  .map-link {
+    width: 100%;
+  }
+  .mapping{
+    width: 100%;
+  }
+  .salestitle{
+    width: 100%;
+    text-align: center;
   }
 }
