@@ -14,15 +14,4 @@ export class DashboardComponent {
   defaultValueLaunch: number = 30;
 
   constructor(private renderer: Renderer2, public colorToggleService: ColorToggleService) { }
-
-  ngOnInit() {
-    this.loadScript('/assets/scripts/mapdata.js'); // Ruta del script que quieres cargar
-    this.loadScript('/assets/scripts/worldmap.js');
-  }
-
-  loadScript(url: string) {
-    const script = this.renderer.createElement('script');
-    script.src = url;
-    this.renderer.appendChild(document.body, script);
-  }
 }
