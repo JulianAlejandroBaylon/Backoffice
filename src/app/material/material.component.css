@@ -24,6 +24,9 @@
 .wrap {
   flex-wrap: wrap;
 }
+.container{
+  padding-bottom: 10%;
+}
 
 @media (max-width: 576px) {
   .example-ripple-container {

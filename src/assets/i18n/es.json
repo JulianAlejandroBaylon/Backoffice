@@ -96,5 +96,28 @@
     "Set10":"Ingrese a su billetera para pagos",
     "Set11":"Guardar",
     "Set12":"Ingresa a tu billetera de Metamask para enviarte tus productos digitales"
+  },
+  "Material":{
+    "Mat1":"Documentos",
+    "Mat2":"/assets/docs/FichaTecnica.pdf",
+    "Mat3":"/assets/docs/VrakkaLitePaperEsp.pdf",
+    "Mat4":"/assets/docs/Mision,vision-y-valores.pdf",
+    "Mat5":"/assets/docs/Procesoderecibircompra.pdf",
+    "Mat6":"/assets/docs/VRKToken.pdf",
+    "Mat7":"/assets/docs/VrakkaTokenomics.pdf",
+    "Mat8":"/assets/docs/Vrakkatransfelmundo.pdf",
+    "Mat9":"/assets/docs/VrakkaWhitepaperEsp.pdf",
+    "Mat10":"FichaTecnica",
+    "Mat11":"VrakkaLitePaperEsp",
+    "Mat12":"Mision,vision-y-valores",
+    "Mat13":"Procesoderecibircompra",
+    "Mat14":"VRKTokenEsp",
+    "Mat15":"VrakkaTokenomicsEsp",
+    "Mat16":"Vrakkatransfelmundo",
+    "Mat17":"VrakkaWhitepaperEsp",
+    "Mat18":"Ficha Tecnica",
+    "Mat19":"Mision,vision y valores",
+    "Mat20":"Proceso de recibir compra",
+    "Mat21":"Vrakka transformando el mundo"
   }
 }
